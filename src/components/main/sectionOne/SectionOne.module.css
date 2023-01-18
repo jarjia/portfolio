@@ -1,0 +1,52 @@
+:root {
+    --primary: #1c1c1c;
+    --secondary: #0053a5;
+}
+.section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+}
+.section-1 > div {
+    height: 24em;
+    padding: 10px 20px;
+    margin: 0 20px;
+    text-align: center;
+}
+.section-1-1 {
+    text-align: center;
+}
+.section-1-1 h1 {
+    letter-spacing: 1px;
+    font-size: 28px;
+    text-align: center;
+}
+.section-1-1 > .section-1-1-div {
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1-1 > .section-1-1-div strong {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.section-1-1 > .section-1-1-div span {
+    font-size: 16px;
+}
+.section-1-1 button {
+    background-color: var(--secondary);
+    margin-top: 25px;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.section-1-2 h1 {
+    letter-spacing: 1px;
+    font-size: 28px;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+:root {
+    --primary: #1c1c1c;
+    --secondary: #0053a5;
+}
+
+.nav-down {
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 0 20px var(--primary);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.nav-up {
+    background-color: rgb(28, 28, 28, 0.97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 20px var(--primary);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.nav-child {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    align-items: center;
+} 
+.nav-child-1 h1 {
+    font-family: 'Explora', cursive;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.nav-child-2 ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-child-2 ul > li {
+    list-style-type: none;
+    padding: 10px;
+    user-select: none;
+}
+
+.nav-child-2 ul > li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border-radius: 5px;
+    user-select: none;
+}
+.nav-child-2 ul > li a:hover {
+    background-color: var(--secondary);
+    transition: all 0.2s ease-in;
+}
+.nav-child-3 {
+    background: url('../../../assets/profile.jpg');
+    background-size: 100px 100px;
+    background-position: 10% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
