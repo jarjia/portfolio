@@ -11,9 +11,6 @@
     padding: 20px;   
     text-transform: capitalize;
 } 
-.aside ul > a:hover {
-    background-color: rgba(211, 211, 211, 0.2);
-}
 .aside ul > a li {
     list-style-type: none;
 } 
@@ -26,9 +23,6 @@
     padding: 20px;   
     text-transform: capitalize;
 } 
-.show-aside ul > a:hover {
-    background-color: rgba(211, 211, 211, 0.2);
-}
 .show-aside ul > a li {
     list-style-type: none;
 } 
