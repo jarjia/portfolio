@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import NavbarCSS from './Navbar.module.css'
 
 const Navbar = ({handleSideBar}) => {

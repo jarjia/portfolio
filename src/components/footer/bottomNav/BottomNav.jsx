@@ -27,7 +27,7 @@ const BottomNav = () => {
         </div>
         <div className={BottomNavCSS['bottom-nav-2']}>
             {svgs.map(item => {
-                return <a href={item.href} target='_blank' rel="noopener noreferrer">{item.social}</a>
+                return <a key={item.href} href={item.href} target='_blank' rel="noopener noreferrer">{item.social}</a>
             })}
         </div>
     </div>

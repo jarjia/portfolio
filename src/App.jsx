@@ -10,12 +10,12 @@ const App = () => {
 
     useEffect(() => {
       setLoading(true)
-      // setTimeout(() => {
+      setTimeout(() => {
         axios.get('https://api.github.com/users/jarjia').then(res => {
           setGithub(res.data) 
           setLoading(false)
         })
-      // }, 1500)
+      }, 1500)
     }, [])
 
   return (

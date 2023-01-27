@@ -1,5 +1,4 @@
 import React from 'react'
-import SideBar from '../sidebar/SideBar'
 import HeaderOneCSS from './HeaderOne.module.css'
 
 const HeaderOne = () => {
