@@ -1,0 +1,120 @@
+:root {
+    --primary: #1c1c1c;
+    --secondary: #0053a5;
+}
+.section-4 {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0;
+}
+.section-4-work h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+.section-4-work h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+}
+.section-4-edu {
+    padding: 20px 100px;
+}
+.section-4-edu h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+.section-4-edu-single {
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+.section-4-edu-single .section-4-edu-single-1 {
+    background-color: #343a40;
+    padding: 50px;
+    color: white;
+}
+.section-4-edu-single h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    text-align: center;
+}
+.section-4-edu-single span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.section-4-edu-single .section-4-edu-single-2 {
+    padding: 0 20px;
+}
+.section-4-edu-single .section-4-edu-single-2 span {
+    margin-left: 10px;
+}
+.section-4-edu-single-2, .section-4-edu-single-1 {
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 1024px) {
+    .section-4-edu-single h3 {
+        text-align: left;
+    }
+    .section-4-edu-single-1 h3 {
+        text-align: center;
+    }
+    .section-4-edu-single span {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .section-4-edu-single .section-4-edu-single-1 {
+        padding: 40px;
+    }
+    .section-4-edu-single h3 {
+        font-size: 24px;
+    }
+    .section-4-edu-single span {
+        font-size: 18px;
+    }
+    .section-4-edu {
+        padding: 20px;
+    }
+    .section-4-edu-single .section-4-edu-single-2 {
+        padding: 0 20px;
+    }
+    .section-4-edu-single .section-4-edu-single-2 span {
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 433px) {
+    .section-4-edu-single {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-4-edu-single .section-4-edu-single-1 {
+        background-color: #343a40;
+        width: 100%;
+        padding: 40px 0;
+        color: white;
+    }
+    .section-4-edu-single h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-4-edu-single span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .section-4-edu-single h3 {
+        font-size: 18px;
+    }
+    .section-4-edu-single span {
+        font-size: 16px;
+    }
+}

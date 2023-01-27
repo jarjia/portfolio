@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
 
+html {
+    scroll-behavior: smooth;
+} 
 body {
     margin: 0;
     padding: 0;
-    height: 100em;
+    background: url('./assets/gray-background.jpg');
+    height: 300em;
 }
 main {
-    padding: 40px 80px;
-    background: url('./assets/gray-background.jpg');
+    padding: 40px 0;
+}
+main > section {
+    margin-bottom: 20px;
 }

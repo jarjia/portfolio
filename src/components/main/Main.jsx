@@ -5,14 +5,14 @@ import SectionThree from './sectionThree/SectionThree'
 import SectionFour from './sectionFour/SectionFour'
 import { aboutMe } from '../../data/data'
 
-const Main = () => {
+const Main = ({github}) => {
   return (
     <>
       <main>
-        <SectionOne aboutMe={aboutMe}/>
-        {/* <SectionTwo />
+        <SectionOne aboutMe={aboutMe} github={github}/>
+        <SectionTwo />
         <SectionThree />
-        <SectionFour /> */}
+        <SectionFour />
       </main>
     </>
   )

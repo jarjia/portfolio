@@ -1,0 +1,62 @@
+:root {
+    --primary: #1c1c1c;
+    --secondary: #0053a5;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--primary);
+}
+.bottom-nav .bottom-nav-1 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.bottom-nav a svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.bottom-nav a svg:hover {
+    fill: var(--secondary);
+}
+.bottom-nav-2 {
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 540px) {
+    .bottom-nav {
+        padding: 20px;
+    }
+    .bottom-nav .bottom-nav-1 h3 {
+        font-size: 16px;
+    }
+    .bottom-nav a svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .bottom-nav {
+        padding: 15px;
+    }
+    .bottom-nav .bottom-nav-1 h3 {
+        font-size: 13px;
+    }
+    .bottom-nav a svg {
+        width: 16px;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .bottom-nav {
+        padding: 5px;
+    }
+    .bottom-nav .bottom-nav-1 h3 {
+        font-size: 12px;
+    }
+    .bottom-nav a svg {
+        width: 16px;
+    }
+}

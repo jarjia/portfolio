@@ -1,22 +1,24 @@
 import React from 'react'
+import SideBar from '../sidebar/SideBar'
 import HeaderOneCSS from './HeaderOne.module.css'
-import Profile from '../../../assets/profile.jpg'
 
 const HeaderOne = () => {
   return (
-    <div className={HeaderOneCSS.header}>
-      <div className={HeaderOneCSS['header-center']}>
-        <div className={HeaderOneCSS['header-center-img']}>
-          <div></div>
-        </div>
-        <div className={HeaderOneCSS['header-center-btns']}>
-          <a href='https://gray-billie-87.tiiny.site/' target='_blank'>
-            <button>view resume</button>
-          </a>
-          <button>contact me</button>
+      <div className={HeaderOneCSS.header}>
+        <div className={HeaderOneCSS['header-center']}>
+          <div className={HeaderOneCSS['header-center-img']}>
+            <div className={HeaderOneCSS['header-center-img-profile']}></div>
+          </div>
+          <div className={HeaderOneCSS['header-center-btns']}>
+            <a href='https://my-cv.tiiny.site/' target='_blank' rel="noopener noreferrer">
+              <button>view resume</button>
+            </a>
+            <a href='#footer'>
+              <button>contact me</button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
   )
 }
 

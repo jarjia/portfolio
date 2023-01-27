@@ -6,35 +6,35 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Roboto', sans-serif;
+    padding: 40px;
 }
 .section-1 > div {
-    height: 24em;
     padding: 10px 20px;
     margin: 0 20px;
     text-align: center;
 }
-.section-1-1 {
+.section-1-info {
     text-align: center;
 }
-.section-1-1 h1 {
+.section-1-info h1 {
     letter-spacing: 1px;
     font-size: 28px;
     text-align: center;
 }
-.section-1-1 > .section-1-1-div {
+.section-1-info > .section-1-info-div {
     padding: 7px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.section-1-1 > .section-1-1-div strong {
+.section-1-info > .section-1-info-div strong {
     font-size: 20px;
     text-transform: capitalize;
 }
-.section-1-1 > .section-1-1-div span {
+.section-1-info > .section-1-info-div span {
     font-size: 16px;
 }
-.section-1-1 button {
+.section-1-info button {
     background-color: var(--secondary);
     margin-top: 25px;
     padding: 10px 80px;
@@ -45,8 +45,101 @@
     text-transform: capitalize;
     cursor: pointer;
 }
-.section-1-2 h1 {
+.section-1-about h1 {
     letter-spacing: 1px;
     font-size: 28px;
     text-align: center;
+}
+.section-1-about h4 {
+    letter-spacing: 0;
+}
+.section-1-github .section-1-github-img img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    user-select: none;
+}
+.section-1-github .section-1-github-info {
+    text-align: center;
+}
+h3, h4, h5 {
+    margin: 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.section-1-github-info-1 a {
+    background-image: linear-gradient(to bottom,#eee 0,#ddd 100%);
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 5px;
+    border-color: #ccc;
+    text-decoration: none;
+    color: #111;
+    font-weight: 700;
+}
+.section-1-github-info-1 a:hover {
+    background-image: linear-gradient(to bottom, rgb(216, 216, 216) 0,rgb(187, 187, 187) 100%);
+    box-shadow: 0 0 1px black;
+    transition: all 0.2s ease;
+}
+.section-1-github-info-1 img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
+}
+.section-1-github-info small{
+    position: relative;
+    top: 5px;
+}
+p {
+    line-height: 22px;
+}
+h1 {
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1024px) {
+    p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .section-1-info button {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .section-1-about h1 {
+        letter-spacing: 0;
+        font-size: 26px;
+    }
+
+}
+
+@media only screen and (max-width: 912px) {  
+    .section-1 {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 820px) {  
+    .section-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-1-info  {
+        grid-column: span 2;
+    }
+    .section-1-info > .section-1-info-div {
+        display: flex;
+        justify-content: baseline;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-1 > div {
+        padding: 5px 20px;
+    }
 }

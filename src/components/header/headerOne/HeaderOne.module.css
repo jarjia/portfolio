@@ -55,3 +55,47 @@
     background-color: #0052a5de;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+@media only screen and (max-width: 912px) {
+    .header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    .header-center-img div {
+        width: 300px;
+        height: 300px;
+    }
+    .header-center-btns button {
+        font-size: 22px;
+        width: 350px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 820px) {  
+    .header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    .header-center-img div {
+        width: 200px;
+        height: 200px;
+    }
+    .header-center-btns button {
+        font-size: 16px;
+        width: 250px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 390px) {  
+    .header-center-img div {
+        width: 180px;
+        height: 180px;
+    }
+    .header-center-btns button {
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+    }
+}
