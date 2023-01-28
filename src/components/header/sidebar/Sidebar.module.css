@@ -15,6 +15,7 @@
 } 
 .aside ul > a li {
     list-style-type: none;
+    margin-top: 20px;
 } 
 .show-aside ul > a {
     width: calc(100% - 40px);
@@ -32,6 +33,7 @@
 }
 .show-aside ul > a li {
     list-style-type: none;
+    margin-top: 20px;
 } 
 .aside { 
     width: 30%;
