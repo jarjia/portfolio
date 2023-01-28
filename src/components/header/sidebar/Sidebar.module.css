@@ -7,9 +7,11 @@
     font-size: 22px;
     text-decoration: none;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    padding: 20px;   
+    font-family: 'Roboto', sans-serif;  
     text-transform: capitalize;
+} 
+.show-aside ul > a:hover {
+    background-color: gray;
 } 
 .aside ul > a li {
     list-style-type: none;
@@ -20,13 +22,18 @@
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
-    padding: 20px;   
     text-transform: capitalize;
 } 
+.aside ul {
+    margin-top: 40px;
+}
+.show-aside ul {
+    margin-top: 40px;
+}
 .show-aside ul > a li {
     list-style-type: none;
 } 
-.aside {
+.aside { 
     width: 30%;
     height: 100%;
     background-image: linear-gradient(var(--primary), var(--secondary)), url('../../../assets/gray-background.jpg');
