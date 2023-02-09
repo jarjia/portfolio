@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0cc5682a.css",
-    "main.js": "/portfolio/static/js/main.ec9ba60a.js",
+    "main.js": "/portfolio/static/js/main.2cb67eb3.js",
     "static/media/profile.jpg": "/portfolio/static/media/profile.a39b1df6dbe6738c9d6a.jpg",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.4333ba985f70d3a66343.png",
     "static/media/portfolio-back.jpg": "/portfolio/static/media/portfolio-back.9b8f32260df4cf379bb4.jpg",
@@ -16,10 +16,10 @@
     "static/media/gh-logo.png": "/portfolio/static/media/gh-logo.c8007a9fb185cb152ee6.png",
     "index.html": "/portfolio/index.html",
     "main.0cc5682a.css.map": "/portfolio/static/css/main.0cc5682a.css.map",
-    "main.ec9ba60a.js.map": "/portfolio/static/js/main.ec9ba60a.js.map"
+    "main.2cb67eb3.js.map": "/portfolio/static/js/main.2cb67eb3.js.map"
   },
   "entrypoints": [
     "static/css/main.0cc5682a.css",
-    "static/js/main.ec9ba60a.js"
+    "static/js/main.2cb67eb3.js"
   ]
 }
