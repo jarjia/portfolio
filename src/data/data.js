@@ -146,7 +146,6 @@ export const skills4 = [
 export const portfolios = [
     {
         id: 1,
-        image: 'https://i.ibb.co/L9PXscK/react-calculator.png',
         project_name: 'React Calculator',
         github_link: 'https://github.com/jarjia/react-calculator',
         host_link: 'https://jarjia.github.io/react-calculator/',
@@ -154,7 +153,6 @@ export const portfolios = [
     },
     {
         id: 2,
-        image: 'https://i.ibb.co/M5L8PcL/tic-tac-toe-game.png',
         project_name: 'Tic Tac Toe Game',
         github_link: 'https://github.com/jarjia/Tic-Tac-Toe-game',
         host_link: 'https://jarjia.github.io/Tic-Tac-Toe-game/',
@@ -162,7 +160,6 @@ export const portfolios = [
     },
     {
         id: 3,
-        image: 'https://i.ibb.co/Yfr7V2W/weather-app.png',
         project_name: 'Weather App',
         github_link: 'https://github.com/jarjia/weather-app',
         host_link: 'https://jarjia.github.io/weather-app/',
@@ -170,7 +167,6 @@ export const portfolios = [
     },   
     {
         id: 4,
-        image: 'https://i.ibb.co/qjR31h7/tenzies-game.png',
         project_name: 'Tenzies Game',
         github_link: 'https://github.com/jarjia/Tenzies-Game',
         host_link: 'https://jarjia.github.io/Tenzies-Game/',
@@ -178,7 +174,6 @@ export const portfolios = [
     },
     {
         id: 5,
-        image: 'https://i.ibb.co/CmL8V7R/random-color-generator.png',
         project_name: 'Random Rgb/Hex color generator',
         github_link: 'https://github.com/jarjia/Hex-Rgb-generator',
         host_link: 'https://jarjia.github.io/Hex-Rgb-generator/',
@@ -186,7 +181,6 @@ export const portfolios = [
     },
     {
         id: 6,
-        image: 'https://i.ibb.co/0JMgFS2/note-app.png',
         project_name: 'Note App',
         github_link: 'https://github.com/jarjia/note-app',
         host_link: 'https://jarjia.github.io/note-app/',
@@ -194,7 +188,6 @@ export const portfolios = [
     },
     {
         id: 7,
-        image: 'https://i.ibb.co/zfh67YR/crypto-pro.png',
         project_name: 'Crypto App',
         github_link: 'https://github.com/jarjia/note-app',
         host_link: 'https://jarjia.github.io/crypto-app/',
@@ -202,7 +195,6 @@ export const portfolios = [
     },
     {
         id: 8,
-        image: 'https://i.ibb.co/N7m7TBQ/password-generator.png',
         project_name: 'Password Generator',
         github_link: 'https://github.com/jarjia/password-generator',
         host_link: 'https://jarjia.github.io/password-generator/',
