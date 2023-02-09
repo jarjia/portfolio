@@ -69,6 +69,30 @@
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
 }
+.section-3-portfolios-single-1 {
+    background-image: url('../../../assets/portfolios/react-calculator.png');
+}
+.section-3-portfolios-single-2 {
+    background-image: url('../../../assets/portfolios/tic-tac-toe-game.png');
+}
+.section-3-portfolios-single-3 {
+    background-image: url('../../../assets/portfolios/weather-app.png');
+}
+.section-3-portfolios-single-4 {
+    background-image: url('../../../assets/portfolios/tenzies-game.png');
+}
+.section-3-portfolios-single-5 {
+    background-image: url('../../../assets/portfolios/random-color-generator.png');
+}
+.section-3-portfolios-single-6 {
+    background-image: url('../../../assets/portfolios/note-app.png');
+}
+.section-3-portfolios-single-7 {
+    background-image: url('../../../assets/portfolios/crypto-pro.png');
+}
+.section-3-portfolios-single-8 {
+    background-image: url('../../../assets/portfolios/password-generator.png');
+}
 @media only screen and (max-width: 1024px) {
     .section-3-portfolios-single {
         width: 100%;

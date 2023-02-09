@@ -21,9 +21,9 @@ const SectionThree = () => {
         {newPortfolio.map(item => {
           return <div key={item.id}>
             <h3>{item.project_name}</h3>
+            <div className={SectionThreeCSS['section-3-portfolios-single-parent']}>
             <div
-                className={SectionThreeCSS['section-3-portfolios-single']} 
-                style={{backgroundImage: `url(${item.image})`}}
+                className={`${SectionThreeCSS['section-3-portfolios-single']} ${SectionThreeCSS[`section-3-portfolios-single-${item.id}`]}`} 
                 onMouseOver={() => handleHover(item.id)}
                 onMouseLeave={() => handleLeave(item.id)}
               >
@@ -39,7 +39,8 @@ const SectionThree = () => {
                     </aside>
                   </aside>}
                 </div>
-            </div> 
+              </div> 
+            </div>
           </div>
         })}
       </div>
