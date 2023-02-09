@@ -11,7 +11,7 @@ export const aboutMe = {
     fullName: 'Jarji Abuashvili',
     age: dyear,
     email: 'jarjaabua@gmail.com',
-    phone: '+995 597 20 51 64',
+    phone: '+995 579 20 51 64',
     residentOf: 'Gori, Georgia',
     languages: ['Georgian', 'English(Uk)']
 }
