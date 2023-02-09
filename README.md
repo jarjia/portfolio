@@ -6,4 +6,8 @@ https://jarjia.github.io/portfolio/
 
 Hello, I am a junior web developer. I have experience of developing web apps mainly using React.js and JavaScript. 
 Besides React.js I have worked with Redux, GraphQl and Next.js. Also I could use Jest and RTL for testing purposes. In addition for styling I have knowledge of SASS and Material UI.
+<<<<<<< HEAD
 I have worked on various React applications like: Note app, Tic-Tac-Toe game, React calculator and E-commerce app.
+=======
+I have worked on various React applications like: Note app, Tic-Tac-Toe game, React calculator and E-commerce app.
+>>>>>>> 5eb5349298b6c839bdc14aabf314cff3beda16fc
