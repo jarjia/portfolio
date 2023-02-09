@@ -1,7 +1,7 @@
 # My Portfolio
 
 ## Host Link:
-[(https://jarjia.github.io/portfolio/)]
+https://jarjia.github.io/portfolio/
 ## Summary:
 
 Hello, I am a junior web developer. I have experience of developing web apps mainly using React.js and JavaScript. 
