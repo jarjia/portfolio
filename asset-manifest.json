@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.645eaaa2.css",
-    "main.js": "/portfolio/static/js/main.16ff2217.js",
+    "main.css": "/portfolio/static/css/main.0cc5682a.css",
+    "main.js": "/portfolio/static/js/main.ec9ba60a.js",
     "static/media/profile.jpg": "/portfolio/static/media/profile.a39b1df6dbe6738c9d6a.jpg",
+    "static/media/weather-app.png": "/portfolio/static/media/weather-app.4333ba985f70d3a66343.png",
     "static/media/portfolio-back.jpg": "/portfolio/static/media/portfolio-back.9b8f32260df4cf379bb4.jpg",
+    "static/media/password-generator.png": "/portfolio/static/media/password-generator.14b4e3bef25b90694b33.png",
+    "static/media/crypto-pro.png": "/portfolio/static/media/crypto-pro.5a474742e51b01648828.png",
+    "static/media/note-app.png": "/portfolio/static/media/note-app.1f2b38c7ddd9f8d0e6b0.png",
     "static/media/gray-background.jpg": "/portfolio/static/media/gray-background.cb9b5d8cfb35356e6f5c.jpg",
+    "static/media/random-color-generator.png": "/portfolio/static/media/random-color-generator.1647537eaf710a425943.png",
+    "static/media/tic-tac-toe-game.png": "/portfolio/static/media/tic-tac-toe-game.64e5ca31fc7ea9118d78.png",
+    "static/media/tenzies-game.png": "/portfolio/static/media/tenzies-game.e65a506bbc27784599fa.png",
+    "static/media/react-calculator.png": "/portfolio/static/media/react-calculator.fba25e99cd411f37de46.png",
     "static/media/gh-logo.png": "/portfolio/static/media/gh-logo.c8007a9fb185cb152ee6.png",
     "index.html": "/portfolio/index.html",
-    "main.645eaaa2.css.map": "/portfolio/static/css/main.645eaaa2.css.map",
-    "main.16ff2217.js.map": "/portfolio/static/js/main.16ff2217.js.map"
+    "main.0cc5682a.css.map": "/portfolio/static/css/main.0cc5682a.css.map",
+    "main.ec9ba60a.js.map": "/portfolio/static/js/main.ec9ba60a.js.map"
   },
   "entrypoints": [
-    "static/css/main.645eaaa2.css",
-    "static/js/main.16ff2217.js"
+    "static/css/main.0cc5682a.css",
+    "static/js/main.ec9ba60a.js"
   ]
 }
