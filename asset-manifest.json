@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0cc5682a.css",
+    "main.css": "/portfolio/static/css/main.0517ba4b.css",
     "main.js": "/portfolio/static/js/main.e1592333.js",
     "static/media/profile.jpg": "/portfolio/static/media/profile.a39b1df6dbe6738c9d6a.jpg",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.4333ba985f70d3a66343.png",
@@ -15,11 +15,11 @@
     "static/media/react-calculator.png": "/portfolio/static/media/react-calculator.fba25e99cd411f37de46.png",
     "static/media/gh-logo.png": "/portfolio/static/media/gh-logo.c8007a9fb185cb152ee6.png",
     "index.html": "/portfolio/index.html",
-    "main.0cc5682a.css.map": "/portfolio/static/css/main.0cc5682a.css.map",
+    "main.0517ba4b.css.map": "/portfolio/static/css/main.0517ba4b.css.map",
     "main.e1592333.js.map": "/portfolio/static/js/main.e1592333.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cc5682a.css",
+    "static/css/main.0517ba4b.css",
     "static/js/main.e1592333.js"
   ]
 }
