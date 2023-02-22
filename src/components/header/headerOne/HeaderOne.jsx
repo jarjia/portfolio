@@ -9,9 +9,6 @@ const HeaderOne = () => {
             <div className={HeaderOneCSS['header-center-img-profile']}></div>
           </div>
           <div className={HeaderOneCSS['header-center-btns']}>
-            <a href='https://my-cv.tiiny.site/' target='_blank' rel="noopener noreferrer">
-              <button>view resume</button>
-            </a>
             <a href='#footer'>
               <button>contact me</button>
             </a>
