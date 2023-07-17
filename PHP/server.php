@@ -5,7 +5,7 @@ if(str_starts_with($currentURL, 'http')) {
 }else {
     header('Access-Control-Allow-Origin: https://jarjia.github.io/portfolio/');
 }
-header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Max-Age: 86400');
 
