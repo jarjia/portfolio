@@ -1,5 +1,12 @@
+import { Layout } from './components'
+import { Home } from './pages'
+
 function App() {
-  return <div className='text-red-500'>jarji</div>
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  )
 }
 
 export default App

@@ -1,12 +1,26 @@
 {
   "compilerOptions": {
-    "baseUrl": "*/src",
-    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "preserve",
     "paths": {
-      "@": ["src/*"]
-    }
+      "@/*": ["./*"]
+    },
+    "isolatedModules": true,
+    "incremental": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowUnusedLabels": true,
+    "noUnusedLocals": true
   },
-  "include": ["src"],
+  "include": ["vite-env.d.ts", "**/*.ts", "**/*.tsx"],
   "allowSyntheticDefaultImports": true,
   "esModuleInterop": true,
   "allowImportingTsExtensions": true
