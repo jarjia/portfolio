@@ -47,7 +47,7 @@ const Skills = () => {
       ></div>
       <button onClick={handleSwitch}>switch</button>
       <br></br>
-      <button onClick={request}>request alert</button>
+      <button onClick={request}>request</button>
     </div>
   )
 }
