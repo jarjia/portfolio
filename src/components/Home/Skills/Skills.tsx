@@ -20,7 +20,7 @@ const Skills = () => {
         name: 'jarji',
       }
       const res = await axios.post(
-        'http://localhost:8000/PHP/server.php',
+        'https://jarjia.github.io/portfolio/PHP/server.php',
         JSON.stringify(data),
       )
       console.log(res.data)
