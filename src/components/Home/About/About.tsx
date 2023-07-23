@@ -56,7 +56,10 @@ const About = () => {
                 alt='github icon'
                 className='w-5 h-5 mr-1'
               />
-              <strong> Follow {`@${github?.login}`}</strong>
+              <strong className='text-black'>
+                {' '}
+                Follow {`@${github?.login}`}
+              </strong>
             </a>
           </div>
           <small>
