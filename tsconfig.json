@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "target": "es5",
+    "target": "es2015",
     "module": "commonjs",
     "strict": true,
     "jsx": "preserve",
     "paths": {
       "@/*": ["./*"]
     },
+    "lib": ["ES2015", "DOM"],
     "isolatedModules": true,
     "incremental": true,
     "allowJs": true,
