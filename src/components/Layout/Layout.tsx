@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
     <section className={!theme ? 'dark' : undefined}>
       <nav className='fixed grid grid-cols-3 items-center z-[10] px-8 shadow-lg text-white bg-primary dark:bg-primary-dark text-whit h-20 w-screen'>
         <div>
-          <h1 id='name' className='text-2xl italic font-bold'>
+          <h1 id='name' className='text-2xl italic capitalize font-bold'>
             jarji abuashvili
           </h1>
         </div>
