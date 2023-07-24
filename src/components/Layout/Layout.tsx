@@ -9,8 +9,10 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
     return null
   }
 
+  console.log(theme)
+
   return (
-    <section className={!theme ? 'dark' : undefined}>
+    <section className={theme}>
       <nav className='fixed grid grid-cols-3 items-center z-[10] px-8 shadow-lg text-white bg-primary dark:bg-primary-dark text-whit h-20 w-screen'>
         <div>
           <h1 id='name' className='text-2xl italic capitalize font-bold'>
@@ -24,7 +26,7 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
         </ul>
         <ul className='flex justify-end'>
           <li
-            onClick={handleModes}
+            onClick={() => handleModes(theme === 'light' ? 'dark' : 'light')}
             className='flex dark:bg-switcher bg-white w-[40px] p-[3px] h-[22px] rounded-full cursor-pointer'
           >
             <div className='relative w-full h-full'>

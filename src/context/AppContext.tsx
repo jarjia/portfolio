@@ -2,12 +2,12 @@ import { createContext, useState, useEffect } from 'react'
 import { Context } from './types'
 
 export const AppContext = createContext<Context>({
-  theme: false,
+  theme: null,
   handleModes: () => {},
 })
 
 const AppContextProvider: React.FC<{ children: JSX.Element }> = (props) => {
-  const [theme, setTheme] = useState<boolean | null>(null)
+  const [theme, setTheme] = useState<null | string>(null)
 
   useEffect(() => {
     const cookies = document.cookie.split(';')
@@ -15,20 +15,19 @@ const AppContextProvider: React.FC<{ children: JSX.Element }> = (props) => {
       .find((item) => item.includes('theme'))
       ?.split('=')[1]
     if (newTheme) {
-      setTheme(newTheme === 'false' ? false : true)
+      setTheme(newTheme)
+    }
+    if (newTheme === undefined) {
+      setTheme('light')
     }
   }, [theme])
 
-  const handleModes = () => {
-    document.cookie = `theme=${!theme}; path=/; max-age=31536000`
-    const cookies = document.cookie.split(';')
-    const newTheme = cookies
-      .find((item) => item.includes('theme'))
-      ?.split('=')[1]
-    if (newTheme) {
-      setTheme(newTheme === 'false' ? false : true)
-    }
+  const handleModes = (argTheme: string) => {
+    document.cookie = `theme=${argTheme}; path=/; max-age=31536000`
+    setTheme(argTheme)
   }
+
+  console.log('re')
 
   const contextValue = {
     theme,
