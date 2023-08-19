@@ -31,7 +31,7 @@ const MainProject = () => {
             }}
           >
             <Slide
-              img='/images/main.png'
+              img='images/main.png'
               hovered={hovered}
               text="This is my main project, which for me was the hardest project i've ever
         had to do on my own. In this project I had to use Next.js for frontend
@@ -53,7 +53,7 @@ const MainProject = () => {
             }}
           >
             <Slide
-              img='/images/feed.png'
+              img='images/feed.png'
               hovered={hovered}
               text="After logging in you will be introduced to a page called news feed. In
         news feed you have access to newest posted posts which are movie quotes
@@ -82,7 +82,7 @@ const MainProject = () => {
             }}
           >
             <Slide
-              img='/images/profile.png'
+              img='images/profile.png'
               hovered={hovered}
               text=' On the profile page you have access to your accounts information. From
         here you can change your name, email, password or your avatar, but if
@@ -103,7 +103,7 @@ const MainProject = () => {
             }}
           >
             <Slide
-              img='/images/desc.png'
+              img='images/desc.png'
               hovered={hovered}
               text="On movie description page we get more info about the movie we have
         created, From here we can update movie credentials or delete the movie.
