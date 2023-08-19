@@ -27,8 +27,6 @@ const AppContextProvider: React.FC<{ children: JSX.Element }> = (props) => {
     setTheme(argTheme)
   }
 
-  console.log('re')
-
   const contextValue = {
     theme,
     handleModes,
