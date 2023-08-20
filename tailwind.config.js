@@ -5,8 +5,14 @@ export default {
   theme: {
     extend: {
       screens: {
+        tiny: { max: '480px' },
+        tinyd: { max: '440px' },
+        tinymid: { max: '520px' },
         sm: { max: '710px' },
-        mid: { max: '1232px' },
+        mid: { max: '1370px' },
+        midNorm: { max: '1170px' },
+        md: { max: '1000px' },
+        lg: { min: '1600px' },
       },
       colors: {
         primary: '#0077b6',
