@@ -9,20 +9,35 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
     return null
   }
 
-  console.log(theme)
-
   return (
     <section className={theme}>
-      <nav className='fixed grid grid-cols-3 items-center z-[10] px-8 shadow-lg text-white bg-primary dark:bg-primary-dark text-whit h-20 w-screen'>
-        <div>
+      <nav className='fixed grid grid-cols-3 tinymid:grid-cols-2 items-center z-[10] px-8 shadow-lg text-white bg-primary dark:bg-primary-dark text-whit h-20 w-screen'>
+        <div className='tinymid:hidden block'>
           <h1 id='name' className='text-2xl italic capitalize font-bold'>
             jarji abuashvili
           </h1>
         </div>
         <ul className='capitalize flex items-center justify-center gap-2'>
-          <li>skills</li>
-          <li>projects</li>
-          <li>contact</li>
+          <li>
+            <a href='#skills' className='capitalize'>
+              skills
+            </a>
+          </li>
+          <li>
+            <a href='#experiences' className='capitalize'>
+              experiences
+            </a>
+          </li>
+          <li>
+            <a href='#projects' className='capitalize'>
+              projects
+            </a>
+          </li>
+          <li>
+            <a href='#contacts' className='capitalize'>
+              contacts
+            </a>
+          </li>
         </ul>
         <ul className='flex justify-end'>
           <li
@@ -35,7 +50,7 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
           </li>
         </ul>
       </nav>
-      <main className='text-black h-[200em] dark:text-white bg-[url("/images/gray-background.jpg")] dark:bg-[url("/images/darkmode.png")]'>
+      <main className='text-black dark:text-white bg-[url("/images/gray-background.jpg")] dark:bg-[url("/images/darkmode.png")]'>
         {children}
       </main>
       <footer></footer>

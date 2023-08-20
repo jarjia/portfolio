@@ -1,22 +1,31 @@
 import { Slide as SlideType } from './types'
 
-const Slide: React.FC<SlideType> = ({ img, hovered, text }) => {
+const Slide: React.FC<SlideType> = ({ img, hovered, text, height }) => {
   return (
     <div>
-      <img
-        src={img}
-        className={`cursor-pointer absolute block w-full ${
-          hovered ? 'brightness-[0.3]' : 'brightness-100'
+      <div
+        className={`cursor-pointer bg-cover bg-[50%_0%] bg-no-repeat absolute block w-full ${
+          hovered ? 'brightness-[0.3] tinyd:brightness-100' : 'brightness-100'
         } transition-all`}
-        alt='Landing page of my main project'
-      />
-      <p
-        className={`${
-          hovered ? 'opacity-100' : 'opacity-0'
-        } text-center px-20 top-36 text-white absolute transition-all`}
+        style={{
+          backgroundImage: `url(${img})`,
+          height: `${height}px`,
+        }}
+      ></div>
+      <div
+        className='px-20 tinyd:px-2 text-white text-center w-full flex flex-col justify-center absolute'
+        style={{
+          height: `${height}px`,
+        }}
       >
-        {text}
-      </p>
+        <p
+          className={`${
+            hovered ? 'opacity-100' : 'opacity-0'
+          } text-center transition-all sm:text-sm tinyd:hidden block`}
+        >
+          {text}
+        </p>
+      </div>
     </div>
   )
 }
