@@ -5,7 +5,7 @@ const About = () => {
   const { github } = useAbout()
 
   return (
-    <section className='grid grid-cols-3 sm:grid-cols-1 px-6 py-6 gap-8'>
+    <section className='grid grid-cols-3 md:grid-cols-1 px-6 py-6 gap-8'>
       <div className='text-center leading-normal'>
         <h2 className='capitalize text-3xl py-2'>about me</h2>
         <h4 className='text-lg py-2'>

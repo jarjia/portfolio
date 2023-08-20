@@ -1,36 +1,64 @@
-import { useState, useEffect } from 'react'
 import { Slide } from '@/components'
+import useMainProject from './useMainProject'
 
 const MainProject = () => {
-  const [slide, setSlide] = useState(0)
-  const [hovered, setHovered] = useState(false)
-
-  useEffect(() => {
-    if (slide < 0) {
-      setSlide(3)
-    } else if (slide > 3) {
-      setSlide(0)
-    }
-  }, [slide])
+  const { height, hovered, setHovered, parentHeight, ref, slide, setSlide } =
+    useMainProject()
 
   return (
-    <div className='flex flex-col items-center sm:px-2 pt-12 px-64'>
-      <h2 className='text-4xl border-b-2 border-black dark:border-white mb-8 pb-2 w-fit px-6'>
+    <div
+      id='projects'
+      className='flex flex-col items-center pt-12 px-64 midNorm:px-4'
+    >
+      <h2 className='text-4xl border-b-2 border-black dark:border-white pb-2 w-fit px-6'>
         Main project
       </h2>
+      <p className='text-2xl capitalize'>epic movie quotes</p>
+      <div className='flex flex-col border-normal border-black rounded dark:border-white px-10 py-2 items-center mt-2 mb-8'>
+        <a
+          href='https://github.com/jarjia/epic-movie-quotes-next'
+          className='capitalize mb-2 underline italic'
+          target='_blank'
+        >
+          github link (frontend)
+        </a>
+        <a
+          href='https://github.com/jarjia/epic-movie-quotes-laravel'
+          className='capitalize mb-2 underline italic'
+          target='_blank'
+        >
+          github link (backend)
+        </a>
+        <a
+          href='https://epic-movie-quotes.jarjia.redberryinternship.ge/'
+          className='capitalize underline italic'
+          target='_blank'
+        >
+          production link
+        </a>
+      </div>
       <div
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         className='relative w-full'
       >
-        <div className='relative h-[450px] overflow-hidden rounded-lg'>
+        <div
+          ref={ref}
+          className='overflow-hidden rounded-lg'
+          style={{
+            height: `${parentHeight}px`,
+          }}
+        >
           <div
-            className='block transition-all duration-500'
+            className='transition-all duration-500'
             style={{
-              transform: `translateX(${slide > 0 ? `-${slide}00%` : '0%'})`,
+              transform: `translateX(${
+                slide === 0 ? `0%` : slide === 3 ? '-200%' : '-100%'
+              })`,
             }}
           >
             <Slide
+              height={height}
               img='images/main.png'
               hovered={hovered}
               text="This is my main project, which for me was the hardest project i've ever
@@ -41,11 +69,11 @@ const MainProject = () => {
         account and access further content of my app. If for some reason you
         forgot your password, you can recover it just by providing your
         account's email and recover instructions will be sent to that email. 
-        Also this app has support for English and Georgian"
+        Also this app has support for English and Georgian languages."
             />
           </div>
           <div
-            className='block transition-all duration-500'
+            className='transition-all duration-500'
             style={{
               transform: `translateX(${
                 slide > 1 ? '-100%' : slide === 1 ? '0%' : '100%'
@@ -53,6 +81,7 @@ const MainProject = () => {
             }}
           >
             <Slide
+              height={height}
               img='images/feed.png'
               hovered={hovered}
               text="After logging in you will be introduced to a page called news feed. In
@@ -68,7 +97,7 @@ const MainProject = () => {
             />
           </div>
           <div
-            className='block transition-all duration-500'
+            className='transition-all duration-500'
             style={{
               transform: `translateX(${
                 slide === 2
@@ -82,6 +111,7 @@ const MainProject = () => {
             }}
           >
             <Slide
+              height={height}
               img='images/profile.png'
               hovered={hovered}
               text=' On the profile page you have access to your accounts information. From
@@ -90,7 +120,7 @@ const MainProject = () => {
         avatar. If you are registered without google you can change anything
         even email. Changing email is a bit different than changing other
         information because new email has to be verified so when you provide new
-        email first you get verification mail on that new email, after you
+        email first you get verification mail on that email, after you
         verify you get redirected to profile page and new email is set!'
             />
           </div>
@@ -103,6 +133,7 @@ const MainProject = () => {
             }}
           >
             <Slide
+              height={height}
               img='images/desc.png'
               hovered={hovered}
               text="On movie description page we get more info about the movie we have
@@ -114,45 +145,55 @@ const MainProject = () => {
         already on specific movie page and it is attached to that movie by default."
             />
           </div>
-        </div>
-        <div className='absolute z-2 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2'>
-          <button
-            type='button'
-            className={`w-3 h-3 rounded-full ${
-              slide === 0 ? 'bg-white' : 'bg-gray-500'
-            }`}
-            onClick={() => setSlide(0)}
-          ></button>
-          <button
-            type='button'
-            className={`w-3 h-3 rounded-full ${
-              slide === 1 ? 'bg-white' : 'bg-gray-500'
-            }`}
-            onClick={() => setSlide(1)}
-          ></button>
-          <button
-            type='button'
-            className={`w-3 h-3 rounded-full ${
-              slide === 2 ? 'bg-white' : 'bg-gray-500'
-            }`}
-            onClick={() => setSlide(2)}
-          ></button>
-          <button
-            type='button'
-            className={`w-3 h-3 rounded-full ${
-              slide === 3 ? 'bg-white' : 'bg-gray-500'
-            }`}
-            onClick={() => setSlide(3)}
-          ></button>
+          <div
+            className={`${
+              hovered
+                ? 'opacity-1 pointer-events-auto'
+                : 'opacity-0 pointer-events-none'
+            } transition-all absolute z-2 bottom-5 tiny:bottom-[-25px] w-full flex justify-center gap-2`}
+          >
+            <button
+              type='button'
+              className={`w-3 h-3 rounded-full ${
+                slide === 0 ? 'bg-primary dark:Lbg-white' : 'bg-gray-500'
+              }`}
+              onClick={() => setSlide(0)}
+            ></button>
+            <button
+              type='button'
+              className={`w-3 h-3 rounded-full ${
+                slide === 1 ? 'bg-primary dark:Lbg-white' : 'bg-gray-500'
+              }`}
+              onClick={() => setSlide(1)}
+            ></button>
+            <button
+              type='button'
+              className={`w-3 h-3 rounded-full ${
+                slide === 2 ? 'bg-primary dark:Lbg-white' : 'bg-gray-500'
+              }`}
+              onClick={() => setSlide(2)}
+            ></button>
+            <button
+              type='button'
+              className={`w-3 h-3 rounded-full ${
+                slide === 3 ? 'bg-primary dark:Lbg-white' : 'bg-gray-500'
+              }`}
+              onClick={() => setSlide(3)}
+            ></button>
+          </div>
         </div>
         <button
           type='button'
-          className='absolute top-0 left-0 z-2 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
+          className={`${
+            hovered
+              ? 'opacity-1 pointer-events-auto'
+              : 'opacity-0 pointer-events-none'
+          } transition-all absolute top-0 left-0 z-2 flex items-center justify-center h-full px-4 cursor-pointer group`}
           onClick={() => {
             setSlide(slide - 1)
           }}
         >
-          <span className='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'>
+          <span className='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 '>
             <svg
               className='w-4 h-4 text-white dark:text-gray-800'
               aria-hidden='true'
@@ -162,9 +203,9 @@ const MainProject = () => {
             >
               <path
                 stroke='currentColor'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                stroke-width='2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
                 d='M5 1 1 5l4 4'
               />
             </svg>
@@ -173,12 +214,16 @@ const MainProject = () => {
         </button>
         <button
           type='button'
-          className='absolute top-0 right-0 z-2 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
+          className={`${
+            hovered
+              ? 'opacity-1 pointer-events-auto'
+              : 'opacity-0 pointer-events-none'
+          } transition-all absolute top-0 right-0 z-2 flex items-center justify-center h-full px-4 cursor-pointer group`}
           onClick={() => {
             setSlide(slide + 1)
           }}
         >
-          <span className='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none'>
+          <span className='inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60'>
             <svg
               className='w-4 h-4 text-white dark:text-gray-800'
               aria-hidden='true'
@@ -188,9 +233,9 @@ const MainProject = () => {
             >
               <path
                 stroke='currentColor'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                stroke-width='2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
                 d='m1 9 4-4-4-4'
               />
             </svg>
