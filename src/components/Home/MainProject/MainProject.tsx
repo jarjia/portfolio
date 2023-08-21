@@ -13,7 +13,7 @@ const MainProject = () => {
       <h2 className='text-4xl border-b-2 border-black dark:border-white pb-2 w-fit px-6'>
         Main project
       </h2>
-      <p className='text-2xl capitalize'>epic movie quotes</p>
+      <p className='text-2xl capitalize pt-2'>epic movie quotes</p>
       <div className='flex flex-col border-normal border-black rounded dark:border-white px-10 py-2 items-center mt-2 mb-8'>
         <a
           href='https://github.com/jarjia/epic-movie-quotes-next'
