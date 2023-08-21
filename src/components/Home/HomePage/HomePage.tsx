@@ -6,6 +6,7 @@ import {
   OtherProjects,
   Education,
   Experience,
+  Contact,
 } from '@/components'
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
       <OtherProjects />
       <Education />
       <Experience />
+      <Contact />
     </>
   )
 }

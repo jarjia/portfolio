@@ -11,7 +11,7 @@ const useMainProject = () => {
     if (ref.current) {
       setHeight(ref.current?.clientHeight)
       setParentHeight(
-        window.innerWidth < 658 ? 400 : ref.current.clientWidth / 2,
+        window.innerWidth < 658 ? 400 : ref.current.clientWidth / 2 + 50,
       )
     }
   }

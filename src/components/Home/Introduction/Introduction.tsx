@@ -13,10 +13,13 @@ const Introduction = () => {
             jarji abuashvili
           </h1>
         </div>
-        <div>
-          <button className='bg-primary dark:bg-primary-dark dark:hover:bg-primary-hover dark:active:bg-primary-active hover:bg-primary-hover active:bg-primary-active capitalize px-8 py-2 my-2 rounded text-lg'>
+        <div className='my-4'>
+          <a
+            href='#contacts'
+            className='bg-primary dark:bg-primary-dark dark:hover:bg-primary-hover dark:active:bg-primary-active hover:bg-primary-hover active:bg-primary-active capitalize px-8 py-2 my-2 rounded text-lg'
+          >
             contact me
-          </button>
+          </a>
         </div>
       </div>
     </div>
