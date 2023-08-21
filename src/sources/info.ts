@@ -142,7 +142,7 @@ export const experiences = [
     duration: '4 months',
     place: 'redberry international',
     logo: 'images/redberry-logo.png',
-    desc: 'During my time at Redberry International, I was exposed to various aspects of web development operations, contributing to projects that apply to real world applications. This experience provided me with opportunities into furthering my knowledge in frontend development and being introduced to backend development with PHP and Laravel and helped me develop a better understanding of how theoretical concepts are applied in real-world scenarios. Throughout my internship, I had the privilege of working closely with experienced professionals who were dedicated to mentoring and guiding me. This interaction allowed me to enhance my problem-solving abilities, improve my communication skills, and gain a deeper understanding of industry trends and best practices.',
+    desc: "During my time at Redberry International, I was exposed to various aspects of web development operations, working on projects that apply to real world applications. This experience provided me with opportunities into furthering my knowledge in frontend development and being introduced to backend development with PHP and Laravel and helped me develop a better understanding of how theoretical knowledge is applied in real-world scenarios. Throughout my internship, I had the privilege of working with experienced professionals who were dedicated to mentoring and guiding me. This interaction allowed me to improve my communication skills, and gain a deeper understanding of web development's best practices.",
     location: 'tbilisi, georgia',
     website: 'https://redberry.international/',
   },
