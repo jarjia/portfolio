@@ -36,7 +36,7 @@ const svgs = {
 const Contact = () => {
   return (
     <div
-      className='py-4 px-20 sm:px-8 tiny:px-2 bg-cover bg-center'
+      className='text-white py-4 px-20 sm:px-8 tiny:px-2 bg-cover bg-center'
       style={{
         backgroundImage:
           'linear-gradient(#0000007a, #0000007a), url(images/footer.avif)',
