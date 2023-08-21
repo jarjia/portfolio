@@ -1,1 +1,6 @@
 export * from './DropDownIcon'
+export * from './BurgerIcon'
+export * from './ToolsIcon'
+export * from './ExperiencesIcon'
+export * from './SkillsIcon'
+export * from './ContactsIcon'

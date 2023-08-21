@@ -13,3 +13,9 @@ body {
 #name {
   font-family: 'Zen Tokyo Zoo', cursive;
 }
+
+#contacts svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}

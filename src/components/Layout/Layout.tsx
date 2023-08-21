@@ -1,9 +1,15 @@
-import { AppContext } from '@/context'
 import { Layout as LayoutType } from './types'
-import { useContext } from 'react'
+import {
+  BurgerIcon,
+  ExperiencesIcon,
+  ToolsIcon,
+  SkillsIcon,
+  ContactsIcon,
+} from '@/components'
+import useLayout from './useLayout'
 
 const Layout: React.FC<LayoutType> = ({ children }) => {
-  const { theme, handleModes } = useContext(AppContext)
+  const { theme, handleModes, isBurger, setIsBurger, ref } = useLayout()
 
   if (theme === null) {
     return null
@@ -11,13 +17,13 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
 
   return (
     <section className={theme}>
-      <nav className='fixed grid grid-cols-3 tinymid:grid-cols-2 items-center z-[10] px-8 shadow-lg text-white bg-primary dark:bg-primary-dark text-whit h-20 w-screen'>
-        <div className='tinymid:hidden block'>
+      <nav className='fixed grid grid-cols-3 burger:grid-cols-2 tinymid:grid-cols-2 items-center z-[10] px-8 shadow-lg text-white bg-primary dark:bg-primary-dark text-whit h-20 w-screen'>
+        <div className='burger:hidden block'>
           <h1 id='name' className='text-2xl italic capitalize font-bold'>
             jarji abuashvili
           </h1>
         </div>
-        <ul className='capitalize flex items-center justify-center gap-2'>
+        <ul className='capitalize burger:hidden tinymid:ml-4 flex items-center justify-center gap-2'>
           <li>
             <a href='#skills' className='capitalize'>
               skills
@@ -39,6 +45,49 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
             </a>
           </li>
         </ul>
+        <div
+          onClick={() => setIsBurger(!isBurger)}
+          className='hidden burger:block'
+        >
+          <BurgerIcon />
+        </div>
+        <aside
+          ref={ref}
+          className={`absolute top-0 ${
+            isBurger ? 'left-0' : 'left-[-100%]'
+          } transition-all z-10 bg-primary w-4/5 tiny:w-full h-screen hidden burger:block`}
+        >
+          <ul className='capitalize flex flex-col items-left px-6 tiny:items-center justify-center gap-2 mt-8'>
+            <li className='my-2 text-2xl' onClick={() => setIsBurger(false)}>
+              <a href='#skills' className='flex gap-2 capitalize'>
+                <SkillsIcon /> skills
+              </a>
+            </li>
+            <li className='my-2 text-2xl' onClick={() => setIsBurger(false)}>
+              <a href='#experiences' className='flex gap-2 capitalize'>
+                <ExperiencesIcon /> experiences
+              </a>
+            </li>
+            <li className='my-2 text-2xl' onClick={() => setIsBurger(false)}>
+              <a href='#projects' className='flex gap-2 capitalize'>
+                <ToolsIcon /> projects
+              </a>
+            </li>
+            <li className='my-2 text-2xl' onClick={() => setIsBurger(false)}>
+              <a href='#contacts' className='flex gap-2 capitalize'>
+                <ContactsIcon /> contacts
+              </a>
+            </li>
+            <li className='tiny:block hidden'>
+              <button
+                className='capitalize underline text-2xl'
+                onClick={() => setIsBurger(false)}
+              >
+                close
+              </button>
+            </li>
+          </ul>
+        </aside>
         <ul className='flex justify-end'>
           <li
             onClick={() => handleModes(theme === 'light' ? 'dark' : 'light')}
