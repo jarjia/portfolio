@@ -9,6 +9,29 @@ const useMainProject = () => {
   const [parentHeight, setParentHeight] = useState(0)
   const { t } = useTranslation('home')
 
+  const slides = [
+    {
+      img: 'images/main.png',
+      hovered,
+      text: t('landing_text'),
+    },
+    {
+      img: 'images/feed.png',
+      hovered,
+      text: t('news_feed_text'),
+    },
+    {
+      img: 'images/profile.png',
+      hovered,
+      text: t('profile_text'),
+    },
+    {
+      img: 'images/desc.png',
+      hovered,
+      text: t('movie_desc_text'),
+    },
+  ]
+
   const handleHeight = () => {
     if (ref.current) {
       setHeight(ref.current?.clientHeight)
@@ -40,6 +63,7 @@ const useMainProject = () => {
     ref,
     hovered,
     setHovered,
+    slides,
     slide,
     t,
     setSlide,

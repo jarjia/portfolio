@@ -2,8 +2,17 @@ import { Slide } from '@/components'
 import useMainProject from './useMainProject'
 
 const MainProject = () => {
-  const { height, hovered, setHovered, t, parentHeight, ref, slide, setSlide } =
-    useMainProject()
+  const {
+    height,
+    slides,
+    hovered,
+    setHovered,
+    t,
+    parentHeight,
+    ref,
+    slide,
+    setSlide,
+  } = useMainProject()
 
   return (
     <div
@@ -50,72 +59,25 @@ const MainProject = () => {
             height: `${parentHeight}px`,
           }}
         >
-          <div
-            className='transition-all duration-500'
-            style={{
-              transform: `translateX(${
-                slide === 0 ? `0%` : slide === 3 ? '-200%' : '-100%'
-              })`,
-            }}
-          >
-            <Slide
-              height={height}
-              img='images/main.png'
-              hovered={hovered}
-              text={t('landing_text')}
-            />
-          </div>
-          <div
-            className='transition-all duration-500'
-            style={{
-              transform: `translateX(${
-                slide > 1 ? '-100%' : slide === 1 ? '0%' : '100%'
-              })`,
-            }}
-          >
-            <Slide
-              height={height}
-              img='images/feed.png'
-              hovered={hovered}
-              text={t('news_feed_text')}
-            />
-          </div>
-          <div
-            className='transition-all duration-500'
-            style={{
-              transform: `translateX(${
-                slide === 2
-                  ? '0%'
-                  : slide === 0
-                  ? '200%'
-                  : slide === 3
-                  ? '-100%'
-                  : '100%'
-              })`,
-            }}
-          >
-            <Slide
-              height={height}
-              img='images/profile.png'
-              hovered={hovered}
-              text={t('profile_text')}
-            />
-          </div>
-          <div
-            className='block transition-all duration-500'
-            style={{
-              transform: `translateX(${
-                slide === 3 ? '0%' : slide === 0 ? '300%' : '100%'
-              })`,
-            }}
-          >
-            <Slide
-              height={height}
-              img='images/desc.png'
-              hovered={hovered}
-              text={t('movie_desc_text')}
-            />
-          </div>
+          {slides.map((item, index) => {
+            console.log(index)
+            return (
+              <div
+                key={item.img}
+                className='transition-all duration-500'
+                style={{
+                  transform: `translateX(${index - slide}00%)`,
+                }}
+              >
+                <Slide
+                  height={height}
+                  img={item.img}
+                  hovered={item.hovered}
+                  text={item.text}
+                />
+              </div>
+            )
+          })}
           <div
             className={`${
               hovered
