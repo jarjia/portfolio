@@ -60,7 +60,6 @@ const MainProject = () => {
           }}
         >
           {slides.map((item, index) => {
-            console.log(index)
             return (
               <div
                 key={item.img}
