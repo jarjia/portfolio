@@ -15,20 +15,20 @@
 
 ## Prerequisites
 
-- <img style="padding-right:10px;" align="left"  src="readme/assets/node-js.png"   height="22"/> <p>_Node JS @12.X and up_</p>
-- <img style="padding-right:10px;" align="left"  src="readme/assets/npm.png"   height="15"/> <p>_npm @6 and up_</p>
+- <img style="padding-right:10px;" align="left"  src="src/readme/assets/node-js.png"   height="22"/> <p>_Node JS @12.X and up_</p>
+- <img style="padding-right:10px;" align="left"  src="src/readme/assets/npm.png"   height="15"/> <p>_npm @6 and up_</p>
 
 #
 
 ## Tech Stack
 
-- <img style="padding-right:10px;" align="left"  src="readme/assets/react.png"   height="25"/> <p><a href="https://legacy.reactjs.org/" target="_blank">[React.js @18.2.0]</a> - Javascript library<p/>
+- <img style="padding-right:10px;" align="left"  src="src/readme/assets/react.png"   height="25"/> <p><a href="https://legacy.reactjs.org/" target="_blank">[React.js @18.2.0]</a> - Javascript library<p/>
 
-- <img style="padding-right:10px;" align="left"  src="readme/assets/tailwind.png"   height="25"/> <p><a href="https://tailwindcss.com/" target="_blank">[tailwindcss @5.0.4]</a> - CSS framework<p/>
+- <img style="padding-right:10px;" align="left"  src="src/readme/assets/tailwind.png"   height="25"/> <p><a href="https://tailwindcss.com/" target="_blank">[tailwindcss @5.0.4]</a> - CSS framework<p/>
 
-- <img style="padding-right:10px;" align="left"  src="readme/assets/axios.png"   height="25"/> <p><a href="https://axios-http.com/" target="_blank">[axios @1.4.0]</a> - Promise based HTTP client for the browser and node.js<p/>
+- <img style="padding-right:10px;" align="left"  src="src/readme/assets/axios.png"   height="25"/> <p><a href="https://axios-http.com/" target="_blank">[axios @1.4.0]</a> - Promise based HTTP client for the browser and node.js<p/>
 
-- <img style="padding-right:10px;" align="left"  src="readme/assets/ts.png" height="25"/> <p><a href="https://www.typescriptlang.org/" target="_blank">[Typescript @5.0.4]</a> - TypeScript is JavaScript with syntax for types.<p/>
+- <img style="padding-right:10px;" align="left"  src="src/readme/assets/ts.png" height="25"/> <p><a href="https://www.typescriptlang.org/" target="_blank">[Typescript @5.0.4]</a> - TypeScript is JavaScript with syntax for types.<p/>
 
 #
 
@@ -76,14 +76,14 @@ npm run dev
 │    │    ├── Home
 │    │    ├── Layout
 │    │    └── index.ts
-├─── context 
+├─── context
 │     ├── AppContext.tsx
 │     ├── types.d.ts
 │     └── index.ts
 ├─── pages
 │     ├── Home
 │     └── index.ts
-├─── readme 
+├─── readme
 │    └── assets
 ├─── services
 ├─── sources
