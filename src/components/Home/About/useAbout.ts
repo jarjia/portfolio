@@ -1,9 +1,11 @@
 import { githubInfo } from '@/services'
 import { useEffect, useState } from 'react'
 import { Github } from './types'
+import { useTranslation } from 'react-i18next'
 
 const useAbout = () => {
   const [github, setGithub] = useState<null | Github>(null)
+  const { t } = useTranslation('home')
 
   useEffect(() => {
     const fetch = async () => {
@@ -30,6 +32,7 @@ const useAbout = () => {
   }, [])
 
   return {
+    t,
     github,
   }
 }

@@ -1,26 +1,20 @@
-import { aboutMe } from '@/sources'
+import { useInfo } from '@/sources'
 import useAbout from './useAbout'
 
 const About = () => {
-  const { github } = useAbout()
+  const { github, t } = useAbout()
+  const { aboutMe } = useInfo()
 
   return (
     <section className='grid grid-cols-3 md:grid-cols-1 px-6 py-6 gap-8'>
       <div className='text-center leading-normal'>
-        <h2 className='capitalize text-3xl py-2'>about me</h2>
-        <h4 className='text-lg py-2'>
-          Hello, I am Jarji Abuashvili a web developer
-        </h4>
+        <h2 className='capitalize text-3xl py-2'>{t('about_me')}</h2>
+        <h4 className='text-lg py-2'>{t('introduction_name')}</h4>
         <p className='mt-4 leading-7 mid:leading-6 mid:mt-3'>
-          I have been developing web apps for year and half, I am motivated and
-          always looking out for new oppurtunities.I have experience of
-          developing web apps mainly using React.js and JavaScript.{' '}
+          {t('introduction_p_1')}
         </p>
         <p className='mt-6 leading-7 mid:leading-6 mid:mt-3'>
-          My objective is to find company where I can improve my skills and
-          experience as a junior web developer or as an intership candidate. I
-          have created various React.js projects and in conclusion while doing
-          this projects I find myself very determined and consistent.
+          {t('introduction_p_2')}
         </p>
       </div>
       <div>
@@ -70,34 +64,34 @@ const About = () => {
       </div>
       <div>
         <h1 className='capitalize text-3xl text-center py-2'>
-          basic information
+          {t('basic_information')}
         </h1>
         <div className='flex justify-between my-3 mt-8 px-1'>
-          <strong className='text-lg'>Fullname: </strong>
+          <strong className='text-lg'>{t('full_name_label')}: </strong>
           <span className='capitalize'>{aboutMe.fullName}</span>
         </div>
         <div className='flex justify-between my-3 px-1'>
-          <strong className='text-lg'>Email: </strong>
+          <strong className='text-lg'>{t('email_label')}: </strong>
           <span>{aboutMe.email}</span>
         </div>
         <div className='flex justify-between my-3 px-1'>
-          <strong className='text-lg'>Age: </strong>
+          <strong className='text-lg'>{t('age_label')}: </strong>
           <span>{aboutMe.age}</span>
         </div>
         <div className='flex justify-between my-3 px-1'>
-          <strong className='text-lg'>Phone: </strong>
+          <strong className='text-lg'>{t('phone_label')}: </strong>
           <span>{aboutMe.phone}</span>
         </div>
         <div className='flex justify-between my-3 px-1'>
-          <strong className='text-lg'>Location: </strong>
+          <strong className='text-lg'>{t('location_label')}: </strong>
           <span>{aboutMe.residentOf}</span>
         </div>
         <div className='flex justify-between my-3 px-1'>
-          <strong className='text-lg'>Languages: </strong>
+          <strong className='text-lg'>{t('languages_label')}: </strong>
           <span>
             {aboutMe.languages.map((item) => {
               return (
-                <span key={item}>
+                <span key={item} className='capitalize'>
                   {aboutMe.languages.indexOf(item) ===
                   aboutMe.languages.length - 1
                     ? `${item}`

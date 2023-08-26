@@ -1,4 +1,5 @@
-import { aboutMe } from '@/sources'
+import { useInfo } from '@/sources'
+import { useTranslation } from 'react-i18next'
 
 const svgs = {
   plus: (
@@ -34,6 +35,9 @@ const svgs = {
 }
 
 const Contact = () => {
+  const { aboutMe } = useInfo()
+  const { t } = useTranslation('home')
+
   return (
     <div
       className='text-white py-4 px-20 sm:px-8 tiny:px-2 bg-cover bg-center'
@@ -43,10 +47,10 @@ const Contact = () => {
       }}
       id='contacts'
     >
-      <h2 className='text-3xl text-center'>Contact Me</h2>
+      <h2 className='text-3xl text-center capitalize'>{t('contact_me')}</h2>
       <div className='grid grid-cols-2 gap-[50px] my-8 sm:grid-cols-1 sm:gap-8'>
         <div>
-          <h3 className='text-xl'>Contact Me Via: </h3>
+          <h3 className='text-xl capitalize'>{t('contact_me_via')}: </h3>
           <div className='py-2 px-4'>
             <a
               href='mailto:jarjaabua@gmail.com'
@@ -113,15 +117,15 @@ const Contact = () => {
         <div className='px-2'>
           <div className='my-2 mb-8'>
             <div>
-              <h4 className='text-xl'>Location: </h4>
+              <h4 className='text-xl capitalize'>{t('location_label')}: </h4>
               <span className='pl-2'>{aboutMe.residentOf}</span>
             </div>
             <div>
-              <h4 className='text-xl'>Phone: </h4>
+              <h4 className='text-xl capitalize'>{t('phone_label')}: </h4>
               <span className='pl-2'>{aboutMe.phone}</span>
             </div>
             <div>
-              <h4 className='text-xl'>Email: </h4>
+              <h4 className='text-xl capitalize'>{t('email_label')}: </h4>
               <span className='pl-2'>{aboutMe.email}</span>
             </div>
           </div>

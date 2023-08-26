@@ -21,7 +21,7 @@ const Slide: React.FC<SlideType> = ({ img, hovered, text, height }) => {
         <p
           className={`${
             hovered ? 'opacity-100' : 'opacity-0'
-          } text-center transition-all sm:text-sm tinyd:hidden block`}
+          } scrollbar z-[10] text-center overflow-y-scroll pb-2 transition-all sm:text-sm tinyd:hidden block`}
         >
           {text}
         </p>

@@ -1,4 +1,9 @@
+import { useTranslation } from 'react-i18next'
+
 const Introduction = () => {
+  const { t } = useTranslation('common')
+  const { t: tHome } = useTranslation('home')
+
   return (
     <div className='flex items-center justify-center w-full h-screen bg-[url("/images/portfolio-back.jpg")] bg-cover bg-center'>
       <div className='text-center text-white'>
@@ -10,7 +15,7 @@ const Introduction = () => {
             id='name'
             className='border-2 rounded-2xl p-1 bg-[#0000007a] border-white dark:border-primary-dark text-2xl italic capitalize font-bold'
           >
-            jarji abuashvili
+            {t('name')}
           </h1>
         </div>
         <div className='my-4'>
@@ -18,7 +23,7 @@ const Introduction = () => {
             href='#contacts'
             className='bg-primary dark:bg-primary-dark dark:hover:bg-primary-hover dark:active:bg-primary-active hover:bg-primary-hover active:bg-primary-active capitalize px-8 py-2 my-2 rounded text-lg'
           >
-            contact me
+            {tHome('contact_me')}
           </a>
         </div>
       </div>
