@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const useMainProject = () => {
   const [slide, setSlide] = useState(0)
@@ -6,6 +7,7 @@ const useMainProject = () => {
   const ref = useRef<null | HTMLDivElement>(null)
   const [height, setHeight] = useState(0)
   const [parentHeight, setParentHeight] = useState(0)
+  const { t } = useTranslation('home')
 
   const handleHeight = () => {
     if (ref.current) {
@@ -39,6 +41,7 @@ const useMainProject = () => {
     hovered,
     setHovered,
     slide,
+    t,
     setSlide,
   }
 }

@@ -8,7 +8,7 @@ const SkillsIcon = () => {
       version='1.1'
       xmlns='http://www.w3.org/2000/svg'
     >
-      <g id='Page-1' stroke-width='1' fill='none' fill-rule='evenodd'>
+      <g id='Page-1' strokeWidth='1' fill='none' fillRule='evenodd'>
         <g
           id='Icon-Set'
           transform='translate(-308.000000, -99.000000)'

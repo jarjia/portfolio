@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 export default {
   darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -6,7 +7,9 @@ export default {
     extend: {
       screens: {
         tiny: { max: '480px' },
+        tinysm: { max: '330px' },
         tinyd: { max: '440px' },
+        tinydmin: { min: '440px' },
         burger: { max: '780px' },
         tinymid: { max: '520px' },
         sm: { max: '710px' },
@@ -36,5 +39,23 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addBase }) => {
+      addBase({
+        '.scrollbar': {
+          overflowY: 'auto',
+          scrollbarColor: `#808189 transparent`,
+          scrollbarWidth: 'auto',
+        },
+        '.scrollbar::-webkit-scrollbar': {
+          height: '4px',
+          width: '6px',
+        },
+        '.scrollbar::-webkit-scrollbar-thumb': {
+          backgroundColor: '#808189',
+          borderRadius: '50px',
+        },
+      })
+    }),
+  ],
 }

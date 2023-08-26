@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { OtherProject as OtherProjectT } from './types'
+import { useTranslation } from 'react-i18next'
 
 const OtherProject: React.FC<OtherProjectT> = ({
   name,
@@ -8,6 +9,7 @@ const OtherProject: React.FC<OtherProjectT> = ({
   prodLink,
 }) => {
   const [isHovered, setIsHovered] = useState(false)
+  const { t } = useTranslation('home')
 
   return (
     <div>
@@ -45,7 +47,7 @@ const OtherProject: React.FC<OtherProjectT> = ({
                     alt='github logo'
                   />
                   <p className='capitalize text-xl text-center tinymid:text-sm'>
-                    github link
+                    {t('github_link')}
                   </p>
                 </div>
               </a>
@@ -63,7 +65,7 @@ const OtherProject: React.FC<OtherProjectT> = ({
                     alt='production logo'
                   />
                   <p className='capitalize text-xl text-center tinymid:text-sm'>
-                    production link
+                    {t('production_link')}
                   </p>
                 </div>
               </a>
