@@ -103,10 +103,10 @@ const Layout: React.FC<LayoutType> = ({ children }) => {
         <ul className='flex justify-end items-center pr-2 tinysm:pr-0'>
           <li
             onClick={() => handleModes(theme === 'light' ? 'dark' : 'light')}
-            className="flex dark:bg-[url('images/night-bg.avif')] bg-contain bg-repeat bg-center bg-[url('images/sun-bg.avif')] w-[40px] p-[3px] h-[22px] rounded-full cursor-pointer"
+            className='flex dark:bg-[url("/images/night-bg.avif")] bg-contain bg-repeat bg-center bg-[url("/images/sun-bg.avif")] w-[40px] p-[3px] h-[22px] rounded-full cursor-pointer'
           >
             <div className='relative w-full h-full'>
-              <div className="absolute right-1/2 dark:right-0 transition-all w-3/6 h-full bg-cover bg-center bg-[url('images/sun.png')] dark:bg-[url('images/moon.png')] rounded-full"></div>
+              <div className='absolute right-1/2 dark:right-0 transition-all w-3/6 h-full bg-cover bg-center bg-[url("/images/sun.png")] dark:bg-[url("/images/moon.png")] rounded-full'></div>
             </div>
           </li>
           <li>
