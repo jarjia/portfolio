@@ -110,10 +110,10 @@ const useInfo = () => {
 
   const otherProjects = [
     {
-      thumbnail: 'images/projects/corona-time.png',
-      ghLink: 'https://github.com/jarjia/corona-time',
-      prodLink: 'https://coronatime.jarjia.redberryinternship.ge/',
-      name: t('corona_time'),
+      thumbnail: 'images/projects/tenzies-game.png',
+      ghLink: 'https://github.com/jarjia/Tenzies-Game',
+      prodLink: 'https://jarjia.github.io/Tenzies-Game/',
+      name: t('tenzies'),
     },
     {
       thumbnail: 'images/projects/react-calculator.png',
