@@ -88,7 +88,7 @@ const useInfo = () => {
     },
     {
       id: 16,
-      title: 'Swagger',
+      title: 'Vue.js',
     },
     {
       id: 17,
@@ -128,10 +128,11 @@ const useInfo = () => {
       name: t('tic_tac_toe_game'),
     },
     {
-      thumbnail: 'images/projects/weather-app.png',
-      ghLink: 'https://github.com/jarjia/weather-app',
-      prodLink: 'https://jarjia.github.io/weather-app/',
-      name: t('weather_app'),
+      thumbnail: 'images/projects/covid.png',
+      ghLink: 'https://github.com/jarjia/vue-covid-questionnaire',
+      prodLink:
+        'https://654ba8986091fc5da7a62128--golden-puppy-86b37f.netlify.app/',
+      name: t('covid_questionnaire'),
     },
   ]
 
