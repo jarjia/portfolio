@@ -1,5 +1,4 @@
-import { useInfo } from '@/sources'
-import { useTranslation } from 'react-i18next'
+import useContact from './useContact'
 
 const svgs = {
   plus: (
@@ -35,8 +34,8 @@ const svgs = {
 }
 
 const Contact = () => {
-  const { aboutMe } = useInfo()
-  const { t } = useTranslation('home')
+  const { handleSubmit, from, text, subject, error, loading, aboutMe, t } =
+    useContact()
 
   return (
     <div
@@ -50,7 +49,59 @@ const Contact = () => {
       <h2 className='text-3xl text-center capitalize'>{t('contact_me')}</h2>
       <div className='grid grid-cols-2 gap-[50px] my-8 sm:grid-cols-1 sm:gap-8'>
         <div>
-          <h3 className='text-xl capitalize'>{t('contact_me_via')}: </h3>
+          <div className='my-2 text-black'>
+            <h3 className='text-2xl capitalize text-white'>Send Email:</h3>
+            <form onSubmit={handleSubmit} className='flex flex-col mt-2 gap-4'>
+              <div className='flex flex-col'>
+                <label htmlFor='from' className='text-white text-lg capitalize'>
+                  Your Email:
+                </label>
+                <input
+                  ref={from}
+                  type='email'
+                  name='from'
+                  id='from'
+                  className='rounded-sm bg-[#ffffffc4] outline-none px-2 py-1'
+                />
+              </div>
+              <div className='flex flex-col'>
+                <label
+                  htmlFor='subject'
+                  className='text-white text-lg capitalize'
+                >
+                  subject:
+                </label>
+                <input
+                  ref={subject}
+                  type='text'
+                  name='subject'
+                  id='subject'
+                  className='rounded-sm bg-[#ffffffc4] outline-none px-2 py-1'
+                />
+              </div>
+              <div className='flex flex-col'>
+                <label htmlFor='text' className='text-lg text-white capitalize'>
+                  content:
+                </label>
+                <textarea
+                  ref={text}
+                  id='text'
+                  name='text'
+                  className='rounded-sm min-h-[100px] max-h-[300px] bg-[#ffffffc4] outline-none px-2 py-1'
+                />
+              </div>
+              <button
+                disabled={error || loading}
+                type='submit'
+                className={`${
+                  error ? 'bg-red-400' : 'bg-blue-400'
+                } text-white text-lg rounded py-1`}
+              >
+                {error ? 'Error' : loading ? 'Loading...' : 'Send'}
+              </button>
+            </form>
+          </div>
+          <h3 className='text-2xl capitalize'>{t('contact_me_via')}: </h3>
           <div className='py-2 px-4'>
             <a
               href='mailto:jarjaabua@gmail.com'

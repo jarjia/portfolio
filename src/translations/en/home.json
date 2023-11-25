@@ -1,5 +1,6 @@
 {
   "contact_me": "contact me",
+  "download_cv": "download CV",
   "about_me": "about me",
   "introduction_name": "Hello, I am Jarji Abuashvili a web developer",
   "introduction_p_1": "I have been developing web apps for two years, I am motivated and always looking out for new oppurtunities.I have experience of developing web apps mainly using React.js, JavaScript and Laravel.",
@@ -24,7 +25,7 @@
   "movie_desc_text": "On movie description page we get more info about the movie we have created, From here we can update movie credentials or delete the movie. Also we have access to all the quotes this movie has which we can also delete or update as we wish and of course we can add new quote from here straight away without going to news feed page and we don't even need to choose for which movie the quote will be created for because we are already on specific movie page and it is attached to that movie by default.",
   "news_feed_text": "After logging in you will be introduced to a page called news feed. In news feed you have access to newest posted posts which are movie quotes but they have a face of posts on which you can interact by either liking it or commenting on it and your interaction will be sent to post's author via notifications which you can see from navbar on the right. you can create a post by clicking button on the top, but you can create post(quote) only under your own movies. Also you have ability to search through posts by what movie they belong to by starting search with @ or by quote names which starts with # or just search both by not providing anything before search.",
   "other_projects": "other projects",
-  "contact_me_via": "contact me via",
+  "contact_me_via": "or contact me via",
   "education_label": "education",
   "experience_label": "experiences",
   "visit_web": "visit website",
