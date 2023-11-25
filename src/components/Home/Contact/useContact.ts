@@ -47,6 +47,9 @@ const useContact = () => {
         }
         setLoading(true)
         handleSendMail(data)
+        from.current.value = ''
+        text.current.value = ''
+        subject.current.value = ''
       }
     }
   }

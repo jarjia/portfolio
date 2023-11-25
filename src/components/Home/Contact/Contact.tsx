@@ -50,11 +50,13 @@ const Contact = () => {
       <div className='grid grid-cols-2 gap-[50px] my-8 sm:grid-cols-1 sm:gap-8'>
         <div>
           <div className='my-2 text-black'>
-            <h3 className='text-2xl capitalize text-white'>Send Email:</h3>
+            <h3 className='text-2xl capitalize text-white'>
+              {t('send_email')}
+            </h3>
             <form onSubmit={handleSubmit} className='flex flex-col mt-2 gap-4'>
               <div className='flex flex-col'>
                 <label htmlFor='from' className='text-white text-lg capitalize'>
-                  Your Email:
+                  {t('your_email')}
                 </label>
                 <input
                   ref={from}
@@ -69,7 +71,7 @@ const Contact = () => {
                   htmlFor='subject'
                   className='text-white text-lg capitalize'
                 >
-                  subject:
+                  {t('subject')}
                 </label>
                 <input
                   ref={subject}
@@ -81,7 +83,7 @@ const Contact = () => {
               </div>
               <div className='flex flex-col'>
                 <label htmlFor='text' className='text-lg text-white capitalize'>
-                  content:
+                  {t('content')}
                 </label>
                 <textarea
                   ref={text}
@@ -95,9 +97,9 @@ const Contact = () => {
                 type='submit'
                 className={`${
                   error ? 'bg-red-400' : 'bg-blue-400'
-                } text-white text-lg rounded py-1`}
+                } text-white text-lg rounded py-1 capitalize`}
               >
-                {error ? 'Error' : loading ? 'Loading...' : 'Send'}
+                {error ? t('error') : loading ? t('loading') : t('send')}
               </button>
             </form>
           </div>
