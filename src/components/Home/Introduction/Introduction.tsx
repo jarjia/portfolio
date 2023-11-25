@@ -9,16 +9,18 @@ const Introduction = () => {
     try {
       const res = await axios.get(
         `${import.meta.env.VITE_API_URL}/api/download-pdf`,
-        {
-          responseType: 'blob',
-        },
+        // {
+        // responseType: 'blob',
+        // },
       )
-      const url = window.URL.createObjectURL(new Blob([res.data]))
-      const link = document.createElement('a')
-      link.href = url
-      link.setAttribute('download', 'jarji-abuashvili-cv.pdf')
-      document.body.appendChild(link)
-      link.click()
+      console.log(res)
+
+      // const url = window.URL.createObjectURL(new Blob([res.data]))
+      // const link = document.createElement('a')
+      // link.href = url
+      // link.setAttribute('download', 'jarji-abuashvili-cv.pdf')
+      // document.body.appendChild(link)
+      // link.click()
     } catch (error) {
       console.log(error)
     }
