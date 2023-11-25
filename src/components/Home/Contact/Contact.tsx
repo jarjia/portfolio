@@ -186,7 +186,7 @@ const Contact = () => {
             <iframe
               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.091781680365!2d44.10971670603597!3d41.97893728867725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40449dbe42313b3f%3A0x847124f824f7451a!2z4YOh4YOi4YOQ4YOa4YOY4YOc4YOY4YOhIDU!5e0!3m2!1sen!2sge!4v1674725312494!5m2!1sen!2sge'
               allowFullScreen={false}
-              className='w-full h-[200px]'
+              className='w-full h-[400px]'
               loading='lazy'
               title='my location'
               referrerPolicy='no-referrer-when-downgrade'
