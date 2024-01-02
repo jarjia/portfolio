@@ -84,7 +84,7 @@ const About = () => {
         </div>
         <div className='flex justify-between my-3 px-1'>
           <strong className='text-lg'>{t('location_label')}: </strong>
-          <span>{aboutMe.residentOf}</span>
+          <span className='capitalize'>{aboutMe.residentOf}</span>
         </div>
         <div className='flex justify-between my-3 px-1'>
           <strong className='text-lg'>{t('languages_label')}: </strong>
