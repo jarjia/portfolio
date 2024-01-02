@@ -21,7 +21,7 @@ const useInfo = () => {
     age: dyear,
     email: 'jarjaabua@gmail.com',
     phone: '+995 579 20 51 64',
-    residentOf: `${t('gori')}, ${t('georgia')}`,
+    residentOf: `${t('city_residence')}, ${t('georgia')}`,
     languages: [t('georgian'), t('english')],
   }
 
