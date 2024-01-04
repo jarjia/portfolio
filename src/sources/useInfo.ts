@@ -116,10 +116,10 @@ const useInfo = () => {
       name: t('tenzies'),
     },
     {
-      thumbnail: 'images/projects/react-calculator.png',
-      ghLink: 'https://github.com/jarjia/react-calculator',
-      prodLink: 'https://jarjia.github.io/react-calculator',
-      name: t('react_calc'),
+      thumbnail: 'images/projects/ecommerce.png',
+      ghLink: 'https://github.com/jarjia/vue-ecommerce',
+      prodLink: 'https://your.ecommerce.jarji-abuashvili.link',
+      name: t('ecommerce'),
     },
     {
       thumbnail: 'images/projects/tic-tac-toe-game.png',
