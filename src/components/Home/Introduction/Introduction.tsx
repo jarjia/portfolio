@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { useTranslation } from 'react-i18next'
 
 const Introduction = () => {
@@ -6,22 +5,13 @@ const Introduction = () => {
   const { t: tHome } = useTranslation('home')
 
   const handleDownloadCV = async () => {
-    try {
-      const res = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/download-pdf`,
-        {
-          responseType: 'blob',
-        },
-      )
-      const url = window.URL.createObjectURL(new Blob([res.data]))
-      const link = document.createElement('a')
-      link.href = url
-      link.setAttribute('download', 'jarji-abuashvili-cv.pdf')
-      document.body.appendChild(link)
-      link.click()
-    } catch (error) {
-      console.log(error)
-    }
+    const pdfPath = '/files/Jarji-Abuashvili-CV.pdf'
+    const link = document.createElement('a')
+    link.href = pdfPath
+    link.download = 'jarji-abuashvili-cv.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   return (
