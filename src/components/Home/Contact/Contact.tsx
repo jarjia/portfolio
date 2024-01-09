@@ -89,7 +89,7 @@ const Contact = () => {
                   ref={text}
                   id='text'
                   name='text'
-                  className='rounded-sm min-h-[100px] max-h-[300px] bg-[#ffffffc4] outline-none px-2 py-1'
+                  className='rounded-sm min-h-[150px] h-[150px] max-h-[150px] bg-[#ffffffc4] outline-none px-2 py-1'
                 />
               </div>
               <button
