@@ -3,4 +3,5 @@ export type OtherProject = {
   ghLink: string
   prodLink: string
   name: string
+  tech: string
 }

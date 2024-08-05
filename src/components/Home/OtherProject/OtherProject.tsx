@@ -7,13 +7,16 @@ const OtherProject: React.FC<OtherProjectT> = ({
   thumbnail,
   ghLink,
   prodLink,
+  tech,
 }) => {
   const [isHovered, setIsHovered] = useState(false)
   const { t } = useTranslation('home')
 
   return (
     <div>
-      <h2 className='text-2xl text-center py-2 capitalize'>{name}</h2>
+      <h2 className='text-2xl text-center py-2 capitalize'>
+        {name} ({tech})
+      </h2>
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

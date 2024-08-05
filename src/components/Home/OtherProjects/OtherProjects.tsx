@@ -20,6 +20,7 @@ const OtherProjects = () => {
               ghLink={item.ghLink}
               prodLink={item.prodLink}
               thumbnail={item.thumbnail}
+              tech={item.tech}
             />
           )
         })}
