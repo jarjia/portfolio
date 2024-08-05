@@ -106,6 +106,22 @@ const useInfo = () => {
       id: 20,
       title: 'React I18n',
     },
+    {
+      id: 21,
+      title: 'Ant design',
+    },
+    {
+      id: 22,
+      title: 'AWS',
+    },
+    {
+      id: 23,
+      title: 'Inertia.js',
+    },
+    {
+      id: 24,
+      title: 'Stripe',
+    },
   ]
 
   const otherProjects = [
@@ -114,18 +130,21 @@ const useInfo = () => {
       ghLink: 'https://github.com/jarjia/Tenzies-Game',
       prodLink: 'https://jarjia.github.io/Tenzies-Game/',
       name: t('tenzies'),
+      tech: 'React.js',
     },
     {
       thumbnail: 'images/projects/ecommerce.png',
       ghLink: 'https://github.com/jarjia/vue-ecommerce',
       prodLink: 'https://your.ecommerce.jarji-abuashvili.link',
       name: t('ecommerce'),
+      tech: 'Vue.js/Laravel',
     },
     {
       thumbnail: 'images/projects/tic-tac-toe-game.png',
       ghLink: 'https://github.com/jarjia/Tic-Tac-Toe-game',
       prodLink: 'https://jarjia.github.io/Tic-Tac-Toe-game',
       name: t('tic_tac_toe_game'),
+      tech: 'React.js',
     },
     {
       thumbnail: 'images/projects/covid.png',
@@ -133,6 +152,7 @@ const useInfo = () => {
       prodLink:
         'https://654ba8986091fc5da7a62128--golden-puppy-86b37f.netlify.app/',
       name: t('covid_questionnaire'),
+      tech: 'Vue.js',
     },
   ]
 
