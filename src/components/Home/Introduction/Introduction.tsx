@@ -4,16 +4,6 @@ const Introduction = () => {
   const { t } = useTranslation('common')
   const { t: tHome } = useTranslation('home')
 
-  const handleDownloadCV = async () => {
-    const pdfPath = '/files/Jarji-Abuashvili-CV.pdf'
-    const link = document.createElement('a')
-    link.href = pdfPath
-    link.download = 'jarji-abuashvili-cv.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
-
   return (
     <div className='flex items-center justify-center w-full h-screen bg-[url("/images/portfolio-back.jpg")] bg-cover bg-center'>
       <div className='text-center text-white'>
@@ -35,12 +25,12 @@ const Introduction = () => {
           >
             {tHome('contact_me')}
           </a>
-          <button
-            onClick={handleDownloadCV}
+          <a
+            href={`${window.location.origin}/portfolio/files/Jarji-Abuashvili-CV.pdf`}
             className='flex items-center justify-center bg-primary dark:bg-primary-dark dark:hover:bg-primary-hover dark:active:bg-primary-active hover:bg-primary-hover active:bg-primary-active capitalize px-8 py-1 my-2 rounded text-lg'
           >
-            {tHome('download_cv')}
-          </button>
+            {tHome('view_cv')}
+          </a>
         </div>
       </div>
     </div>
