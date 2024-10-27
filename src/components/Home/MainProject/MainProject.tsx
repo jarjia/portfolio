@@ -39,7 +39,7 @@ const MainProject = () => {
           {t('github_link')} ({t('back')})
         </a>
         <a
-          href='https://movie-quotes.jarji-abuashvili.link'
+          href='https://movie-quotes.jarji-abuashvili.com'
           className='capitalize underline italic'
           target='_blank'
         >

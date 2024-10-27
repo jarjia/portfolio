@@ -135,7 +135,7 @@ const useInfo = () => {
     {
       thumbnail: 'images/projects/ecommerce.png',
       ghLink: 'https://github.com/jarjia/vue-ecommerce',
-      prodLink: 'https://your.ecommerce.jarji-abuashvili.link',
+      prodLink: 'https://your.ecommerce.jarji-abuashvili.com',
       name: t('ecommerce'),
       tech: 'Vue.js/Laravel',
     },
