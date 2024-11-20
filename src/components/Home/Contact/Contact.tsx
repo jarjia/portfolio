@@ -102,7 +102,7 @@ const Contact = () => {
                 />
               </div>
               <button
-                disabled={error || loading}
+                disabled={error || loading || success}
                 type='submit'
                 className={`${
                   success

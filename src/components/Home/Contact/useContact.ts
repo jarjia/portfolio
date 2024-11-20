@@ -19,8 +19,8 @@ const useContact = () => {
       await sendMail(data)
       setSuccess(true)
       setTimeout(() => {
-        setSuccess(true)
-      }, 2000)
+        setSuccess(false)
+      }, 1500)
       setLoading(false)
       setError(false)
     } catch (error) {
