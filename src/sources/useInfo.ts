@@ -126,11 +126,11 @@ const useInfo = () => {
 
   const otherProjects = [
     {
-      thumbnail: 'images/projects/tenzies-game.png',
-      ghLink: 'https://github.com/jarjia/Tenzies-Game',
-      prodLink: 'https://jarjia.github.io/Tenzies-Game/',
-      name: t('tenzies'),
-      tech: 'React.js',
+      thumbnail: 'images/projects/video-chat.png',
+      ghLink: 'https://github.com/jarjia/vue-video-chat-app',
+      prodLink: 'https://video-chat.jarji-abuashvili.com',
+      name: t('video-chat'),
+      tech: 'Vue.js/Redis',
     },
     {
       thumbnail: 'images/projects/ecommerce.png',

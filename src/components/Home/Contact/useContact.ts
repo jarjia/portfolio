@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 const useContact = () => {
   const [error, setError] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
   const from = useRef<HTMLInputElement | null>(null)
   const subject = useRef<HTMLInputElement | null>(null)
   const text = useRef<HTMLTextAreaElement | null>(null)
@@ -16,6 +17,10 @@ const useContact = () => {
   const handleSendMail = async (data: MailData) => {
     try {
       await sendMail(data)
+      setSuccess(true)
+      setTimeout(() => {
+        setSuccess(true)
+      }, 2000)
       setLoading(false)
       setError(false)
     } catch (error) {
@@ -56,6 +61,7 @@ const useContact = () => {
 
   return {
     handleSubmit,
+    success,
     from,
     subject,
     text,

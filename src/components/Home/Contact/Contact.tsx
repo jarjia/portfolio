@@ -34,8 +34,17 @@ const svgs = {
 }
 
 const Contact = () => {
-  const { handleSubmit, from, text, subject, error, loading, aboutMe, t } =
-    useContact()
+  const {
+    handleSubmit,
+    from,
+    text,
+    subject,
+    error,
+    loading,
+    aboutMe,
+    t,
+    success,
+  } = useContact()
 
   return (
     <div
@@ -96,10 +105,20 @@ const Contact = () => {
                 disabled={error || loading}
                 type='submit'
                 className={`${
-                  error ? 'bg-red-400' : 'bg-blue-400'
+                  success
+                    ? 'bg-green-400'
+                    : error
+                    ? 'bg-red-400'
+                    : 'bg-blue-400'
                 } text-white text-lg rounded py-1 capitalize`}
               >
-                {error ? t('error') : loading ? t('loading') : t('send')}
+                {success
+                  ? t('success')
+                  : error
+                  ? t('error')
+                  : loading
+                  ? t('loading')
+                  : t('send')}
               </button>
             </form>
           </div>
