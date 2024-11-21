@@ -190,7 +190,7 @@ const useInfo = () => {
       duration: `${t('on_going')}`,
       place: 'Carmover',
       logo: 'images/cover.jpg',
-      desc: t('exp_place_one_desc'),
+      desc: t('exp_place_two_desc'),
       location: t('online'),
       website: 'https://carm.ge',
     },

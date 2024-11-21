@@ -48,6 +48,7 @@
   "on_going": "On-going",
   "online": "Online",
   "exp_place_one_desc": "During my time at Redberry International, I was exposed to various aspects of web development operations, working on projects that apply to real world applications. This experience provided me with opportunities into furthering my knowledge in frontend development and being introduced to backend development with PHP and Laravel. Throughout my internship, I had the privilege of working with experienced professionals who were dedicated to mentoring and guiding me. This interaction allowed me to improve my communication skills, and gain a deeper understanding of web development's best practices.",
+  "exp_place_two_desc": "At Carmover, I work as a freelancer, delivering task-based web solutions using Laravel and React.js. I developed robust backend systems, APIs, and database interactions with Laravel, while creating responsive and dynamic user interfaces using React.js. My work involves breaking down projects into manageable tasks.",
   "send_email": "send email:",
   "your_email": "your email:",
   "subject": "subject:",
