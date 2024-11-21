@@ -160,9 +160,18 @@ const useInfo = () => {
     {
       type: t('edu_type_school'),
       date: '2012-2024',
+      edu_type: t('high_school'),
       name: t('edu_one'),
       location: `${t('gori')}, ${t('georgia')}`,
       website: 'http://www.gmgimnazia.ge/index.php/ka/',
+    },
+    {
+      type: t('edu_type_uni'),
+      date: '2024-2028',
+      name: t('edu_two'),
+      edu_type: t('bachelors'),
+      location: `${t('tbilisi')}, ${t('georgia')}`,
+      website: 'https://gtu.ge/',
     },
   ]
 
@@ -170,11 +179,20 @@ const useInfo = () => {
     {
       type: t('exp_type_intership'),
       duration: `4 ${t('duration_months')}`,
-      place: t('exp_place_one'),
+      place: 'Redberry International',
       logo: 'images/redberry-logo.png',
       desc: t('exp_place_one_desc'),
       location: `${t('tbilisi')}, ${t('georgia')}`,
       website: 'https://redberry.international/',
+    },
+    {
+      type: t('freelancing'),
+      duration: `${t('on_going')}`,
+      place: 'Carmover',
+      logo: 'images/cover.jpg',
+      desc: t('exp_place_one_desc'),
+      location: t('online'),
+      website: 'https://carm.ge',
     },
   ]
 
