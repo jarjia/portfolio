@@ -25,12 +25,12 @@ const Introduction = () => {
           >
             {tHome('contact_me')}
           </a>
-          <a
+          {/* <a
             href={`${window.location.origin}/files/Jarji-Abuashvili-CV.pdf`}
             className='flex items-center justify-center bg-primary dark:bg-primary-dark dark:hover:bg-primary-hover dark:active:bg-primary-active hover:bg-primary-hover active:bg-primary-active capitalize px-8 py-1 my-2 rounded text-lg'
           >
             {tHome('view_cv')}
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
