@@ -178,7 +178,7 @@ const useInfo = () => {
   const experiences = [
     {
       type: t('exp_type_intership'),
-      duration: `4 ${t('duration_months')}`,
+      duration: `2023 March - 2023 July`,
       place: 'Redberry International',
       logo: 'images/redberry-logo.png',
       desc: t('exp_place_one_desc'),
@@ -187,7 +187,16 @@ const useInfo = () => {
     },
     {
       type: t('freelancing'),
-      duration: `${t('on_going')}`,
+      duration: `2023 August - 2024 July`,
+      place: 'Aleph',
+      logo: 'images/aleph.ico',
+      desc: t('exp_place_three_desc'),
+      location: t('online'),
+      website: 'https://www.getaleph.com/',
+    },
+    {
+      type: t('freelancing'),
+      duration: `2024 August - 2025 March`,
       place: 'Carmover',
       logo: 'images/cover.jpg',
       desc: t('exp_place_two_desc'),
