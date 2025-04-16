@@ -37,7 +37,7 @@ const OtherProject: React.FC<OtherProjectT> = ({
           >
             <div className='flex items-center justify-center bg-white dark:bg-gray-200 rounded-sm text-black h-full gap-10'>
               <a
-                href={ghLink}
+                href={ghLink ? ghLink : ''}
                 className={
                   !isHovered ? 'pointer-events-none' : 'pointer-events-auto'
                 }
