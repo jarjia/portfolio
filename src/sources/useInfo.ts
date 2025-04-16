@@ -140,11 +140,11 @@ const useInfo = () => {
       tech: 'Vue.js/Laravel',
     },
     {
-      thumbnail: 'images/projects/tic-tac-toe-game.png',
-      ghLink: 'https://github.com/jarjia/Tic-Tac-Toe-game',
-      prodLink: 'https://jarjia.github.io/Tic-Tac-Toe-game',
-      name: t('tic_tac_toe_game'),
-      tech: 'React.js',
+      thumbnail: 'images/projects/daily.png',
+      ghLink: null,
+      prodLink: 'https://dailyproductsforu.com/',
+      name: 'Daily For U',
+      tech: 'Astro.js/Vannila.js',
     },
     {
       thumbnail: 'images/projects/covid.png',

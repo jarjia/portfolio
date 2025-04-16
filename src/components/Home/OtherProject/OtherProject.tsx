@@ -50,7 +50,7 @@ const OtherProject: React.FC<OtherProjectT> = ({
                     alt='github logo'
                   />
                   <p className='capitalize text-xl text-center tinymid:text-sm'>
-                    {t('github_link')}
+                    {ghLink ? t('github_link') : 'No Github'}
                   </p>
                 </div>
               </a>
