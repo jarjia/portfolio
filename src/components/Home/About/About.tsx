@@ -10,12 +10,17 @@ const About = () => {
       <div className='text-center leading-normal'>
         <h2 className='capitalize text-3xl py-2'>{t('about_me')}</h2>
         <h4 className='text-lg py-2'>{t('introduction_name')}</h4>
-        <p className='mt-4 leading-7 mid:leading-6 mid:mt-3'>
-          {t('introduction_p_1')}
+        <p className='mt-4 text-lg leading-7 mid:leading-6 mid:mt-3'>
+          Hi, I am Jarji, a Full-stack engineer. I specialize in developing
+          robust and efficient applications with a focus on delivering
+          high-quality work on schedule. My expertise includes extensive
+          experience with React.js (Next.js), Vue.js, Laravel and Node.js, where
+          I consistently demonstrate strong determination and organizational
+          skills throughout project development.
         </p>
-        <p className='mt-6 leading-7 mid:leading-6 mid:mt-3'>
+        {/* <p className='mt-6 leading-7 mid:leading-6 mid:mt-3'>
           {t('introduction_p_2')}
-        </p>
+        </p> */}
       </div>
       <div>
         <div>
