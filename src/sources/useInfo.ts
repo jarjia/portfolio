@@ -19,7 +19,7 @@ const useInfo = () => {
   const aboutMe = {
     fullName: t('name'),
     age: dyear,
-    email: 'jarjaabua@gmail.com',
+    email: 'jarjiabuashvili77@gmail.com',
     phone: '+995 579 20 51 64',
     residentOf: `${t('city_residence')}, ${t('georgia')}`,
     languages: [t('georgian'), t('english')],

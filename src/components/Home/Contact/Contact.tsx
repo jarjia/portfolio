@@ -16,11 +16,6 @@ const svgs = {
       <path d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z' />
     </svg>
   ),
-  quora: (
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'>
-      <path d='M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z' />
-    </svg>
-  ),
   linkedin: (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'>
       <path d='M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z' />
@@ -125,7 +120,7 @@ const Contact = () => {
           <h3 className='text-2xl capitalize'>{t('contact_me_via')}: </h3>
           <div className='py-2 px-4'>
             <a
-              href='mailto:jarjaabua@gmail.com'
+              href='mailto:jarjiabuashvili77@gmail.com'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -161,18 +156,6 @@ const Contact = () => {
               </button>
             </a>
             <a
-              href='https://www.quora.com/profile/%E1%83%AF%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98-%E1%83%90%E1%83%91%E1%83%A3%E1%83%90%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <button className='bg-quora hover:bg-quora-hover w-full my-3 mx-1 text-left py-2 px-3 text-white text-xl rounded cursor-pointer flex items-center justify-between'>
-                <div className='flex items-center'>
-                  {svgs.quora} <span className='mx-4'>Quora</span>
-                </div>{' '}
-                {svgs.plus}
-              </button>
-            </a>
-            <a
               href='https://twitter.com/AbuashviliJarji'
               target='_blank'
               rel='noopener noreferrer'
@@ -203,7 +186,7 @@ const Contact = () => {
           </div>
           <div>
             <iframe
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.091781680365!2d44.10971670603597!3d41.97893728867725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40449dbe42313b3f%3A0x847124f824f7451a!2z4YOh4YOi4YOQ4YOa4YOY4YOc4YOY4YOhIDU!5e0!3m2!1sen!2sge!4v1674725312494!5m2!1sen!2sge'
+              src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7924.670895880666!2d44.71709361656989!3d41.718576850731836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1770797644862!5m2!1sen!2sge'
               allowFullScreen={false}
               className='w-full h-[400px]'
               loading='lazy'
