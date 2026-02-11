@@ -18,7 +18,6 @@ const OtherProjects = () => {
               key={item.name}
               name={item.name}
               ghLink={item.ghLink}
-              prodLink={item.prodLink}
               thumbnail={item.thumbnail}
               tech={item.tech}
             />
