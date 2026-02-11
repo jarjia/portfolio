@@ -6,7 +6,6 @@ const OtherProject: React.FC<OtherProjectT> = ({
   name,
   thumbnail,
   ghLink,
-  prodLink,
   tech,
 }) => {
   const [isHovered, setIsHovered] = useState(false)
@@ -51,24 +50,6 @@ const OtherProject: React.FC<OtherProjectT> = ({
                   />
                   <p className='capitalize text-xl text-center tinymid:text-sm'>
                     {ghLink ? t('github_link') : 'No Github'}
-                  </p>
-                </div>
-              </a>
-              <a
-                href={prodLink}
-                className={
-                  !isHovered ? 'pointer-events-none' : 'pointer-events-auto'
-                }
-                target='_blank'
-              >
-                <div className='flex flex-col items-center'>
-                  <img
-                    src='images/hosted.png'
-                    className={`w-[80px] h-[80px] tinymid:w-[60px] tinymid:h-[60px]`}
-                    alt='production logo'
-                  />
-                  <p className='capitalize text-xl text-center tinymid:text-sm'>
-                    {t('production_link')}
                   </p>
                 </div>
               </a>

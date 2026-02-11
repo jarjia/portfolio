@@ -128,29 +128,24 @@ const useInfo = () => {
     {
       thumbnail: 'images/projects/video-chat.png',
       ghLink: 'https://github.com/jarjia/vue-video-chat-app',
-      prodLink: 'https://video-chat.jarji-abuashvili.com',
       name: t('video-chat'),
       tech: 'Vue.js/Redis',
     },
     {
       thumbnail: 'images/projects/ecommerce.png',
       ghLink: 'https://github.com/jarjia/vue-ecommerce',
-      prodLink: 'https://your.ecommerce.jarji-abuashvili.com',
       name: t('ecommerce'),
       tech: 'Vue.js/Laravel',
     },
     {
       thumbnail: 'images/projects/daily.png',
-      ghLink: null,
-      prodLink: 'https://dailyproductsforu.com/',
+      ghLink: 'https://github.com/jarjia/dailyforu',
       name: 'Daily For U',
       tech: 'Astro.js/Vannila.js',
     },
     {
       thumbnail: 'images/projects/covid.png',
       ghLink: 'https://github.com/jarjia/vue-covid-questionnaire',
-      prodLink:
-        'https://654ba8986091fc5da7a62128--golden-puppy-86b37f.netlify.app/',
       name: t('covid_questionnaire'),
       tech: 'Vue.js',
     },
