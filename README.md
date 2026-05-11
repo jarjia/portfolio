@@ -1,6 +1,6 @@
 # My Portfolio
 
-👋 Hi there! I'm Jarji, a 17-year-old junior fullstack developer and this is my portfolio.
+👋 Hi there! I'm Jarji, a fullstack developer and this is my portfolio.
 
 #
 
